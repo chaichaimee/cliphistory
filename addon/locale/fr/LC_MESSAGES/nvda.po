@@ -1,0 +1,98 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ClipHistory 2026.3.4\n"
+"Language: fr\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: clip.py:157
+msgid "&Cancel"
+msgstr "&Annuler"
+
+#: clip.py:203
+msgid "&Close"
+msgstr "&Fermer"
+
+#: clip.py:156
+msgid "&OK"
+msgstr "&OK"
+
+#: clip.py:201
+msgid "&Paste"
+msgstr "Co&ller"
+
+#: clip.py:334
+msgid "Clear All"
+msgstr "Tout effacer"
+
+#: __init__.py:74
+msgid "Cleared all"
+msgstr "Tout a été effacé"
+
+#: clip.py:328
+msgid "Cleared all non-pinned items"
+msgstr "Tous les éléments non épinglés ont été effacés"
+
+#: clip.py:182
+msgid "Clip History"
+msgstr "Historique du presse-papiers"
+
+#: clip.py:347
+msgid "Delete"
+msgstr "Supprimer"
+
+#: clip.py:279
+msgid "Deleted"
+msgstr "Supprimé"
+
+#: clip.py:346
+msgid "Edit"
+msgstr "Modifier"
+
+#: clip.py:286
+msgid "Edit Item"
+msgstr "Modifier l'élément"
+
+#: clip.py:290
+msgid "Item edited"
+msgstr "Élément modifié"
+
+#: clip.py:344
+msgid "Move Down"
+msgstr "Descendre"
+
+#: clip.py:343
+msgid "Move Up"
+msgstr "Monter"
+
+#: clip.py:323
+msgid "Moved down"
+msgstr "Descendu"
+
+#: clip.py:311
+msgid "Moved up"
+msgstr "Monté"
+
+#: __init__.py:82
+msgid "Opens clip history (single) clears all (double)"
+msgstr "Ouvrir l'historique (1 appui), Tout effacer (2 appuis)"
+
+#: clip.py:340
+msgid "Pin"
+msgstr "Épingler"
+
+#: clip.py:299
+msgid "Pinned"
+msgstr "Épinglé"
+
+#: clip.py:197
+msgid "Text"
+msgstr "Texte"
+
+#: clip.py:340
+msgid "Unpin"
+msgstr "Désépingler"
+
+#: clip.py:299
+msgid "Unpinned"
+msgstr "Désépinglé"

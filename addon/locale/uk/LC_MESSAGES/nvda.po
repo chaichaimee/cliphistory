@@ -1,0 +1,98 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ClipHistory 2026.3.4\n"
+"Language: uk\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: clip.py:157
+msgid "&Cancel"
+msgstr "Ска&сувати"
+
+#: clip.py:203
+msgid "&Close"
+msgstr "&Закрити"
+
+#: clip.py:156
+msgid "&OK"
+msgstr "&OK"
+
+#: clip.py:201
+msgid "&Paste"
+msgstr "Вс&тавити"
+
+#: clip.py:334
+msgid "Clear All"
+msgstr "Очистити все"
+
+#: __init__.py:74
+msgid "Cleared all"
+msgstr "Все очищено"
+
+#: clip.py:328
+msgid "Cleared all non-pinned items"
+msgstr "Усі незакріплені елементи видалено"
+
+#: clip.py:182
+msgid "Clip History"
+msgstr "Історія буфера обміну"
+
+#: clip.py:347
+msgid "Delete"
+msgstr "Видалити"
+
+#: clip.py:279
+msgid "Deleted"
+msgstr "Видалено"
+
+#: clip.py:346
+msgid "Edit"
+msgstr "Редагувати"
+
+#: clip.py:286
+msgid "Edit Item"
+msgstr "Редагувати елемент"
+
+#: clip.py:290
+msgid "Item edited"
+msgstr "Елемент відредаговано"
+
+#: clip.py:344
+msgid "Move Down"
+msgstr "Перемістити вниз"
+
+#: clip.py:343
+msgid "Move Up"
+msgstr "Перемістити вгору"
+
+#: clip.py:323
+msgid "Moved down"
+msgstr "Переміщено вниз"
+
+#: clip.py:311
+msgid "Moved up"
+msgstr "Переміщено вгору"
+
+#: __init__.py:82
+msgid "Opens clip history (single) clears all (double)"
+msgstr "Відкрити історію (1 нат.), Очистити все (2 нат.)"
+
+#: clip.py:340
+msgid "Pin"
+msgstr "Закріпити"
+
+#: clip.py:299
+msgid "Pinned"
+msgstr "Закріплено"
+
+#: clip.py:197
+msgid "Text"
+msgstr "Текст"
+
+#: clip.py:340
+msgid "Unpin"
+msgstr "Відкріпити"
+
+#: clip.py:299
+msgid "Unpinned"
+msgstr "Відкріплено"

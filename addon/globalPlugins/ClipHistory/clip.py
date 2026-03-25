@@ -1,0 +1,368 @@
+# clip.py
+import wx
+import os
+import json
+import ui
+import api
+import core
+import addonHandler
+import config
+import logging
+import html as html_lib
+import ctypes
+
+from . import clipboard_utils
+
+addonHandler.initTranslation()
+log = logging.getLogger(__name__)
+
+
+def send_ctrl_v():
+	"""Send Ctrl+V using Windows keybd_event."""
+	try:
+		user32 = ctypes.windll.user32
+		VK_CONTROL = 0x11
+		VK_V = 0x56
+		KEYEVENTF_KEYUP = 0x0002
+
+		user32.keybd_event(VK_CONTROL, 0, 0, 0)
+		user32.keybd_event(VK_V, 0, 0, 0)
+		user32.keybd_event(VK_V, 0, KEYEVENTF_KEYUP, 0)
+		user32.keybd_event(VK_CONTROL, 0, KEYEVENTF_KEYUP, 0)
+		log.debug("Ctrl+V sent via keybd_event")
+	except Exception as e:
+		log.warning(f"send_ctrl_v failed: {e}")
+
+
+class ClipHistoryManager:
+	def __init__(self):
+		self.data_path = self._get_data_path()
+		self.items = []
+		self.load()
+
+	def _get_data_path(self):
+		config_dir = os.path.join(config.getUserDefaultConfigPath(), "ChaiChaimee")
+		if not os.path.exists(config_dir):
+			os.makedirs(config_dir)
+		return os.path.join(config_dir, "ClipHistory.json")
+
+	def load(self):
+		if not os.path.exists(self.data_path):
+			self.items = []
+			return
+		try:
+			with open(self.data_path, "r", encoding="utf-8") as f:
+				loaded = json.load(f)
+		except Exception as e:
+			log.error(f"Failed to load: {e}")
+			self.items = []
+			return
+
+		if isinstance(loaded, list):
+			new_items = []
+			for entry in loaded:
+				if isinstance(entry, str):
+					new_items.append({"text": entry, "pinned": False, "html": None})
+				elif isinstance(entry, dict) and "text" in entry:
+					new_items.append({
+						"text": entry["text"],
+						"pinned": entry.get("pinned", False),
+						"html": entry.get("html")
+					})
+				else:
+					log.warning(f"Skipping invalid item: {entry}")
+			self.items = new_items
+		else:
+			self.items = []
+
+	def save(self):
+		try:
+			with open(self.data_path, "w", encoding="utf-8") as f:
+				json.dump(self.items, f, ensure_ascii=False, indent=2)
+		except Exception as e:
+			log.error(f"Failed to save: {e}")
+
+	def add_item(self, data):
+		if not data or not data.get('text'):
+			return
+		text = data['text']
+		html = data.get('html')
+
+		for i, item in enumerate(self.items):
+			if item["text"] == text:
+				pinned = item["pinned"]
+				del self.items[i]
+				self.items.insert(0, {"text": text, "pinned": pinned, "html": html})
+				self.save()
+				return
+
+		self.items.insert(0, {"text": text, "pinned": False, "html": html})
+		self.save()
+
+	def remove_item(self, index):
+		if 0 <= index < len(self.items):
+			del self.items[index]
+			self.save()
+
+	def edit_item(self, index, new_text):
+		if 0 <= index < len(self.items) and new_text:
+			self.items[index]["text"] = new_text
+			self.items[index]["html"] = None
+			self.save()
+
+	def toggle_pin(self, index):
+		if 0 <= index < len(self.items):
+			self.items[index]["pinned"] = not self.items[index]["pinned"]
+			self.save()
+
+	def move_up(self, index):
+		if 0 < index < len(self.items):
+			self.items[index], self.items[index - 1] = self.items[index - 1], self.items[index]
+			self.save()
+
+	def move_down(self, index):
+		if 0 <= index < len(self.items) - 1:
+			self.items[index], self.items[index + 1] = self.items[index + 1], self.items[index]
+			self.save()
+
+	def clear_all(self):
+		self.items.clear()
+		self.save()
+
+	def clear_non_pinned(self):
+		self.items = [item for item in self.items if item.get("pinned", False)]
+		self.save()
+
+
+class EditTextDialog(wx.Dialog):
+	def __init__(self, parent, title, initial_text):
+		super().__init__(parent, title=title, size=(600, 400),
+						 style=wx.DEFAULT_DIALOG_STYLE | wx.RESIZE_BORDER)
+		self.initial_text = initial_text
+		self.result = None
+		self.init_ui()
+		self.CentreOnParent()
+
+	def init_ui(self):
+		panel = wx.Panel(self)
+		sizer = wx.BoxSizer(wx.VERTICAL)
+
+		self.text_ctrl = wx.TextCtrl(panel, value=self.initial_text,
+									 style=wx.TE_MULTILINE | wx.TE_PROCESS_ENTER)
+		self.text_ctrl.Bind(wx.EVT_SET_FOCUS, self.on_focus)
+		sizer.Add(self.text_ctrl, 1, wx.EXPAND | wx.ALL, 5)
+
+		btn_sizer = wx.BoxSizer(wx.HORIZONTAL)
+		ok_btn = wx.Button(panel, wx.ID_OK, label=_("&OK"))
+		cancel_btn = wx.Button(panel, wx.ID_CANCEL, label=_("&Cancel"))
+		btn_sizer.Add(ok_btn, 0, wx.ALL, 5)
+		btn_sizer.Add(cancel_btn, 0, wx.ALL, 5)
+		sizer.Add(btn_sizer, 0, wx.ALIGN_RIGHT | wx.ALL, 5)
+
+		panel.SetSizer(sizer)
+
+		self.Bind(wx.EVT_BUTTON, self.on_ok, id=wx.ID_OK)
+		self.Bind(wx.EVT_BUTTON, self.on_cancel, id=wx.ID_CANCEL)
+
+	def on_focus(self, event):
+		wx.CallAfter(self.text_ctrl.SelectAll)
+		event.Skip()
+
+	def on_ok(self, event):
+		self.result = self.text_ctrl.GetValue()
+		self.EndModal(wx.ID_OK)
+
+	def on_cancel(self, event):
+		self.result = None
+		self.EndModal(wx.ID_CANCEL)
+
+
+class ClipHistoryDialog(wx.Dialog):
+	def __init__(self, parent, manager):
+		super().__init__(parent, title=_("Clip History"), size=(600, 400),
+						 style=wx.DEFAULT_DIALOG_STYLE | wx.RESIZE_BORDER | wx.STAY_ON_TOP)
+		self.manager = manager
+		self.init_ui()
+		self.update_list()
+		self.Centre()
+		self.Bind(wx.EVT_CLOSE, self.on_close)
+		self.Bind(wx.EVT_CHAR_HOOK, self.on_char)
+		self.Bind(wx.EVT_SHOW, self.on_show)
+
+	def init_ui(self):
+		panel = wx.Panel(self)
+		sizer = wx.BoxSizer(wx.VERTICAL)
+
+		self.list_ctrl = wx.ListCtrl(panel, style=wx.LC_REPORT | wx.LC_SINGLE_SEL)
+		self.list_ctrl.InsertColumn(0, _("Text"), width=550)
+		sizer.Add(self.list_ctrl, 1, wx.EXPAND | wx.ALL, 5)
+
+		btn_sizer = wx.BoxSizer(wx.HORIZONTAL)
+		self.paste_btn = wx.Button(panel, label=_("&Paste"))
+		self.paste_btn.Bind(wx.EVT_BUTTON, self.on_paste)
+		self.close_btn = wx.Button(panel, wx.ID_CANCEL, label=_("&Close"))
+		btn_sizer.Add(self.paste_btn, 0, wx.ALL, 5)
+		btn_sizer.Add(self.close_btn, 0, wx.ALL, 5)
+		sizer.Add(btn_sizer, 0, wx.ALIGN_RIGHT | wx.ALL, 5)
+
+		panel.SetSizer(sizer)
+
+		self.list_ctrl.Bind(wx.EVT_LIST_ITEM_RIGHT_CLICK, self.on_context_menu)
+		self.list_ctrl.Bind(wx.EVT_CONTEXT_MENU, self.on_context_menu)
+		self.list_ctrl.Bind(wx.EVT_LIST_ITEM_ACTIVATED, self.on_paste)
+
+	def update_list(self):
+		self.list_ctrl.DeleteAllItems()
+		for idx, item in enumerate(self.manager.items):
+			if item.get('html'):
+				display_raw = item['html']
+			else:
+				display_raw = item['text']
+			display_text = html_lib.unescape(display_raw)
+			if len(display_text) > 200:
+				display_text = display_text[:200] + "..."
+			list_idx = self.list_ctrl.InsertItem(self.list_ctrl.GetItemCount(), display_text)
+			self.list_ctrl.SetItemData(list_idx, idx)
+
+		if self.list_ctrl.GetItemCount() > 0:
+			self.list_ctrl.Select(0)
+			self.list_ctrl.Focus(0)
+
+	def on_show(self, event):
+		if event.IsShown():
+			wx.CallAfter(self._focus_first_item)
+		event.Skip()
+
+	def _focus_first_item(self):
+		if self.list_ctrl.GetItemCount() > 0:
+			self.list_ctrl.SetFocus()
+			self.list_ctrl.Select(0)
+			self.list_ctrl.Focus(0)
+
+	def get_selected_index(self):
+		selected = self.list_ctrl.GetFirstSelected()
+		if selected == -1:
+			return None
+		return self.list_ctrl.GetItemData(selected)
+
+	def on_paste(self, event):
+		idx = self.get_selected_index()
+		if idx is None:
+			return
+
+		item = self.manager.items[idx]
+		text = item["text"]
+		html = item.get("html")
+
+		if idx != 0:
+			pinned = item["pinned"]
+			del self.manager.items[idx]
+			self.manager.items.insert(0, {"text": text, "pinned": pinned, "html": html})
+			self.manager.save()
+			self.update_list()
+			self.list_ctrl.Select(0)
+			idx = 0
+
+		clipboard_utils.set_clipboard_data(text, html)
+		self.Hide()
+		core.callLater(100, self._paste_and_close)
+
+	def _paste_and_close(self):
+		send_ctrl_v()
+		wx.CallAfter(self.Close)
+
+	def on_delete(self, event):
+		idx = self.get_selected_index()
+		if idx is not None:
+			self.manager.remove_item(idx)
+			self.update_list()
+			ui.message(_("Deleted"))
+
+	def on_edit(self, event):
+		idx = self.get_selected_index()
+		if idx is None:
+			return
+		current_text = self.manager.items[idx]["text"]
+		dlg = EditTextDialog(self, _("Edit Item"), current_text)
+		if dlg.ShowModal() == wx.ID_OK and dlg.result is not None:
+			self.manager.edit_item(idx, dlg.result)
+			self.update_list()
+			ui.message(_("Item edited"))
+		dlg.Destroy()
+
+	def on_pin(self, event):
+		idx = self.get_selected_index()
+		if idx is not None:
+			self.manager.toggle_pin(idx)
+			self.update_list()
+			is_pinned = self.manager.items[idx].get("pinned", False)
+			ui.message(_("Pinned") if is_pinned else _("Unpinned"))
+
+	def on_move_up(self, event):
+		idx = self.get_selected_index()
+		if idx is not None:
+			self.manager.move_up(idx)
+			self.update_list()
+			new_idx = idx - 1
+			if new_idx >= 0:
+				self.list_ctrl.Select(new_idx)
+				self.list_ctrl.Focus(new_idx)
+				self.list_ctrl.EnsureVisible(new_idx)
+			ui.message(_("Moved up"))
+
+	def on_move_down(self, event):
+		idx = self.get_selected_index()
+		if idx is not None:
+			self.manager.move_down(idx)
+			self.update_list()
+			new_idx = idx + 1
+			if new_idx < len(self.manager.items):
+				self.list_ctrl.Select(new_idx)
+				self.list_ctrl.Focus(new_idx)
+				self.list_ctrl.EnsureVisible(new_idx)
+			ui.message(_("Moved down"))
+
+	def on_clear_all(self, event):
+		self.manager.clear_non_pinned()
+		self.update_list()
+		ui.message(_("Cleared all non-pinned items"))
+
+	def on_context_menu(self, event):
+		idx = self.get_selected_index()
+		menu = wx.Menu()
+
+		clear_all_item = menu.Append(wx.ID_ANY, _("Clear All"))
+		self.Bind(wx.EVT_MENU, self.on_clear_all, clear_all_item)
+
+		if idx is not None:
+			menu.AppendSeparator()
+			is_pinned = self.manager.items[idx].get("pinned", False)
+			pin_label = _("Unpin") if is_pinned else _("Pin")
+			pin_item = menu.Append(wx.ID_ANY, pin_label)
+			menu.AppendSeparator()
+			move_up_item = menu.Append(wx.ID_ANY, _("Move Up"))
+			move_down_item = menu.Append(wx.ID_ANY, _("Move Down"))
+			menu.AppendSeparator()
+			edit_item = menu.Append(wx.ID_ANY, _("Edit"))
+			delete_item = menu.Append(wx.ID_ANY, _("Delete"))
+
+			self.Bind(wx.EVT_MENU, self.on_pin, pin_item)
+			self.Bind(wx.EVT_MENU, self.on_move_up, move_up_item)
+			self.Bind(wx.EVT_MENU, self.on_move_down, move_down_item)
+			self.Bind(wx.EVT_MENU, self.on_edit, edit_item)
+			self.Bind(wx.EVT_MENU, self.on_delete, delete_item)
+
+		self.list_ctrl.PopupMenu(menu)
+		menu.Destroy()
+
+	def on_char(self, event):
+		key = event.GetKeyCode()
+		if key == wx.WXK_DELETE:
+			self.on_delete(event)
+		elif key == wx.WXK_ESCAPE:
+			self.Close()
+		else:
+			event.Skip()
+
+	def on_close(self, event):
+		self.Destroy()

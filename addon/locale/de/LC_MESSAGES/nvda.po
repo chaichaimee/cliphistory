@@ -1,0 +1,98 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ClipHistory 2026.3.4\n"
+"Language: de\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: clip.py:157
+msgid "&Cancel"
+msgstr "&Abbrechen"
+
+#: clip.py:203
+msgid "&Close"
+msgstr "&Schließen"
+
+#: clip.py:156
+msgid "&OK"
+msgstr "&OK"
+
+#: clip.py:201
+msgid "&Paste"
+msgstr "&Einfügen"
+
+#: clip.py:334
+msgid "Clear All"
+msgstr "Alles löschen"
+
+#: __init__.py:74
+msgid "Cleared all"
+msgstr "Alles gelöscht"
+
+#: clip.py:328
+msgid "Cleared all non-pinned items"
+msgstr "Alle nicht fixierten Elemente gelöscht"
+
+#: clip.py:182
+msgid "Clip History"
+msgstr "Zwischenablage-Verlauf"
+
+#: clip.py:347
+msgid "Delete"
+msgstr "Löschen"
+
+#: clip.py:279
+msgid "Deleted"
+msgstr "Gelöscht"
+
+#: clip.py:346
+msgid "Edit"
+msgstr "Bearbeiten"
+
+#: clip.py:286
+msgid "Edit Item"
+msgstr "Element bearbeiten"
+
+#: clip.py:290
+msgid "Item edited"
+msgstr "Element bearbeitet"
+
+#: clip.py:344
+msgid "Move Down"
+msgstr "Nach unten verschieben"
+
+#: clip.py:343
+msgid "Move Up"
+msgstr "Nach oben verschieben"
+
+#: clip.py:323
+msgid "Moved down"
+msgstr "Nach unten verschoben"
+
+#: clip.py:311
+msgid "Moved up"
+msgstr "Nach oben verschoben"
+
+#: __init__.py:82
+msgid "Opens clip history (single) clears all (double)"
+msgstr "Verlauf öffnen (1x), Alles löschen (2x)"
+
+#: clip.py:340
+msgid "Pin"
+msgstr "Anheften"
+
+#: clip.py:299
+msgid "Pinned"
+msgstr "Angeheftet"
+
+#: clip.py:197
+msgid "Text"
+msgstr "Text"
+
+#: clip.py:340
+msgid "Unpin"
+msgstr "Lösen"
+
+#: clip.py:299
+msgid "Unpinned"
+msgstr "Gelöst"

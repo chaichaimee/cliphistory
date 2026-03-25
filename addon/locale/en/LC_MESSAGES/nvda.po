@@ -1,0 +1,105 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ClipHistory 2026.3.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-25 14:54+0700\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Anonymous <anonymous@example.com>\n"
+"Language-Team: English\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: NVDA DevOn Addon\n"
+
+#: clip.py:157
+msgid "&Cancel"
+msgstr "&Cancel"
+
+#: clip.py:203
+msgid "&Close"
+msgstr "&Close"
+
+#: clip.py:156
+msgid "&OK"
+msgstr "&OK"
+
+#: clip.py:201
+msgid "&Paste"
+msgstr "&Paste"
+
+#: clip.py:334
+msgid "Clear All"
+msgstr "Clear All"
+
+#: __init__.py:74
+msgid "Cleared all"
+msgstr "Cleared all"
+
+#: clip.py:328
+msgid "Cleared all non-pinned items"
+msgstr "Cleared all non-pinned items"
+
+#: clip.py:182
+msgid "Clip History"
+msgstr "Clip History"
+
+#: clip.py:347
+msgid "Delete"
+msgstr "Delete"
+
+#: clip.py:279
+msgid "Deleted"
+msgstr "Deleted"
+
+#: clip.py:346
+msgid "Edit"
+msgstr "Edit"
+
+#: clip.py:286
+msgid "Edit Item"
+msgstr "Edit Item"
+
+#: clip.py:290
+msgid "Item edited"
+msgstr "Item edited"
+
+#: clip.py:344
+msgid "Move Down"
+msgstr "Move Down"
+
+#: clip.py:343
+msgid "Move Up"
+msgstr "Move Up"
+
+#: clip.py:323
+msgid "Moved down"
+msgstr "Moved down"
+
+#: clip.py:311
+msgid "Moved up"
+msgstr "Moved up"
+
+#: __init__.py:82
+msgid "Opens clip history (single) clears all (double)"
+msgstr "Opens clip history (single) clears all (double)"
+
+#: clip.py:340
+msgid "Pin"
+msgstr "Pin"
+
+#: clip.py:299
+msgid "Pinned"
+msgstr "Pinned"
+
+#: clip.py:197
+msgid "Text"
+msgstr "Text"
+
+#: clip.py:340
+msgid "Unpin"
+msgstr "Unpin"
+
+#: clip.py:299
+msgid "Unpinned"
+msgstr "Unpinned"
