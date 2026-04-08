@@ -1,98 +1,62 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: ClipHistory 2026.3.4\n"
+"Project-Id-Version: ClipHistory 2026.4.2\n"
 "Language: es\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: clip.py:157
+#: clip.py:158
 msgid "&Cancel"
 msgstr "&Cancelar"
 
-#: clip.py:203
+#: clip.py:204
 msgid "&Close"
 msgstr "&Cerrar"
 
-#: clip.py:156
+#: clip.py:157
 msgid "&OK"
 msgstr "&Aceptar"
 
-#: clip.py:201
+#: clip.py:202
 msgid "&Paste"
 msgstr "&Pegar"
 
-#: clip.py:334
+#: clip.py:347
 msgid "Clear All"
 msgstr "Borrar todo"
 
-#: __init__.py:74
-msgid "Cleared all"
-msgstr "Todo borrado"
-
-#: clip.py:328
-msgid "Cleared all non-pinned items"
-msgstr "Borrados todos los elementos no fijados"
-
-#: clip.py:182
+#: clip.py:183
 msgid "Clip History"
 msgstr "Historial de portapapeles"
 
-#: clip.py:347
+#: clip.py:360
 msgid "Delete"
 msgstr "Eliminar"
 
-#: clip.py:279
+#: clip.py:287
 msgid "Deleted"
 msgstr "Eliminado"
 
-#: clip.py:346
+#: clip.py:359
 msgid "Edit"
 msgstr "Editar"
 
-#: clip.py:286
-msgid "Edit Item"
-msgstr "Editar elemento"
-
-#: clip.py:290
-msgid "Item edited"
-msgstr "Elemento editado"
-
-#: clip.py:344
+#: clip.py:357
 msgid "Move Down"
-msgstr "Bajar"
+msgstr "Mover abajo"
 
-#: clip.py:343
+#: clip.py:356
 msgid "Move Up"
-msgstr "Subir"
-
-#: clip.py:323
-msgid "Moved down"
-msgstr "Bajado"
-
-#: clip.py:311
-msgid "Moved up"
-msgstr "Subido"
+msgstr "Mover arriba"
 
 #: __init__.py:82
 msgid "Opens clip history (single) clears all (double)"
-msgstr "Abrir historial (un toque), Borrar todo (doble)"
+msgstr "Abre el historial (un toque), borra todo (dos toques)"
 
-#: clip.py:340
+#: clip.py:353
 msgid "Pin"
 msgstr "Fijar"
 
-#: clip.py:299
-msgid "Pinned"
-msgstr "Fijado"
-
-#: clip.py:197
-msgid "Text"
-msgstr "Texto"
-
-#: clip.py:340
+#: clip.py:353
 msgid "Unpin"
 msgstr "Desfijar"
-
-#: clip.py:299
-msgid "Unpinned"
-msgstr "Desfijado"

@@ -1,4 +1,5 @@
 # clip.py
+
 import wx
 import os
 import json
@@ -245,6 +246,13 @@ class ClipHistoryDialog(wx.Dialog):
 			return None
 		return self.list_ctrl.GetItemData(selected)
 
+	def _restore_selection(self, idx):
+		"""Restore selection and focus to the item at given index."""
+		if 0 <= idx < self.list_ctrl.GetItemCount():
+			self.list_ctrl.Select(idx)
+			self.list_ctrl.Focus(idx)
+			self.list_ctrl.EnsureVisible(idx)
+
 	def on_paste(self, event):
 		idx = self.get_selected_index()
 		if idx is None:
@@ -292,11 +300,16 @@ class ClipHistoryDialog(wx.Dialog):
 
 	def on_pin(self, event):
 		idx = self.get_selected_index()
-		if idx is not None:
-			self.manager.toggle_pin(idx)
-			self.update_list()
-			is_pinned = self.manager.items[idx].get("pinned", False)
-			ui.message(_("Pinned") if is_pinned else _("Unpinned"))
+		if idx is None:
+			return
+		# Store the current index before modifying
+		current_idx = idx
+		self.manager.toggle_pin(current_idx)
+		self.update_list()
+		# Restore selection and focus to the same item after refresh
+		wx.CallAfter(self._restore_selection, current_idx)
+		is_pinned = self.manager.items[current_idx].get("pinned", False)
+		ui.message(_("Pinned") if is_pinned else _("Unpinned"))
 
 	def on_move_up(self, event):
 		idx = self.get_selected_index()

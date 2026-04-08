@@ -1,98 +1,58 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: ClipHistory 2026.3.4\n"
+"Project-Id-Version: ClipHistory 2026.4.2\n"
 "Language: fr\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: clip.py:157
+#: clip.py:158
 msgid "&Cancel"
 msgstr "&Annuler"
 
-#: clip.py:203
+#: clip.py:204
 msgid "&Close"
 msgstr "&Fermer"
 
-#: clip.py:156
+#: clip.py:157
 msgid "&OK"
 msgstr "&OK"
 
-#: clip.py:201
+#: clip.py:202
 msgid "&Paste"
 msgstr "Co&ller"
 
-#: clip.py:334
+#: clip.py:347
 msgid "Clear All"
 msgstr "Tout effacer"
 
-#: __init__.py:74
-msgid "Cleared all"
-msgstr "Tout a été effacé"
-
-#: clip.py:328
-msgid "Cleared all non-pinned items"
-msgstr "Tous les éléments non épinglés ont été effacés"
-
-#: clip.py:182
+#: clip.py:183
 msgid "Clip History"
 msgstr "Historique du presse-papiers"
 
-#: clip.py:347
+#: clip.py:360
 msgid "Delete"
 msgstr "Supprimer"
 
-#: clip.py:279
-msgid "Deleted"
-msgstr "Supprimé"
-
-#: clip.py:346
+#: clip.py:359
 msgid "Edit"
 msgstr "Modifier"
 
-#: clip.py:286
-msgid "Edit Item"
-msgstr "Modifier l'élément"
-
-#: clip.py:290
-msgid "Item edited"
-msgstr "Élément modifié"
-
-#: clip.py:344
+#: clip.py:357
 msgid "Move Down"
-msgstr "Descendre"
+msgstr "Déplacer vers le bas"
 
-#: clip.py:343
+#: clip.py:356
 msgid "Move Up"
-msgstr "Monter"
-
-#: clip.py:323
-msgid "Moved down"
-msgstr "Descendu"
-
-#: clip.py:311
-msgid "Moved up"
-msgstr "Monté"
+msgstr "Déplacer vers le haut"
 
 #: __init__.py:82
 msgid "Opens clip history (single) clears all (double)"
-msgstr "Ouvrir l'historique (1 appui), Tout effacer (2 appuis)"
+msgstr "Ouvre l'historique (1 appui), efface tout (2 appuis)"
 
-#: clip.py:340
+#: clip.py:353
 msgid "Pin"
-msgstr "Épingler"
+msgstr "Epingler"
 
-#: clip.py:299
-msgid "Pinned"
-msgstr "Épinglé"
-
-#: clip.py:197
-msgid "Text"
-msgstr "Texte"
-
-#: clip.py:340
+#: clip.py:353
 msgid "Unpin"
-msgstr "Désépingler"
-
-#: clip.py:299
-msgid "Unpinned"
-msgstr "Désépinglé"
+msgstr "Désingler"
