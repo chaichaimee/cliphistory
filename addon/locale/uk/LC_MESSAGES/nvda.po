@@ -1,62 +1,106 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ClipHistory 2026.4.2\n"
+"POT-Creation-Date: 2026-04-10 23:31+0300\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "Language: uk\n"
+"MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+"X-Poedit-Basepath: ../../../globalPlugins\n"
+"X-Poedit-SearchPath-0: .\n"
 
-#: clip.py:158
-msgid "&Cancel"
-msgstr "Скас&увати"
+#: ClipHistory/__init__.py:74
+msgid "Cleared all"
+msgstr "Очищено все"
 
-#: clip.py:204
-msgid "&Close"
-msgstr "&Закрити"
+#: ClipHistory/__init__.py:82
+msgid "Opens clip history (single) clears all (double)"
+msgstr "Відкрити історію (одне натискання), очистити все (подвійне натискання)"
 
-#: clip.py:157
+#: ClipHistory/clip.py:157
 msgid "&OK"
 msgstr "&OK"
 
-#: clip.py:202
-msgid "&Paste"
-msgstr "Вс&тавити"
+#: ClipHistory/clip.py:158
+msgid "&Cancel"
+msgstr "Скас&увати"
 
-#: clip.py:347
-msgid "Clear All"
-msgstr "Очистити все"
-
-#: clip.py:183
+#: ClipHistory/clip.py:183
 msgid "Clip History"
 msgstr "Історія буфера обміну"
 
-#: clip.py:360
-msgid "Delete"
-msgstr "Видалити"
+#: ClipHistory/clip.py:198
+msgid "Text"
+msgstr "Текст"
 
-#: clip.py:287
+#: ClipHistory/clip.py:202
+msgid "&Paste"
+msgstr "Вс&тавити"
+
+#: ClipHistory/clip.py:204
+msgid "&Close"
+msgstr "&Закрити"
+
+#: ClipHistory/clip.py:287
 msgid "Deleted"
 msgstr "Видалено"
 
-#: clip.py:359
-msgid "Edit"
-msgstr "Редагувати"
+#: ClipHistory/clip.py:294
+msgid "Edit Item"
+msgstr "Редагувати елемент"
 
-#: clip.py:357
-msgid "Move Down"
-msgstr "Перемістити вниз"
+#: ClipHistory/clip.py:298
+msgid "Item edited"
+msgstr "Елемент відредаговано"
 
-#: clip.py:356
-msgid "Move Up"
-msgstr "Перемістити вгору"
+#: ClipHistory/clip.py:312
+msgid "Pinned"
+msgstr "Закріплено"
 
-#: __init__.py:82
-msgid "Opens clip history (single) clears all (double)"
-msgstr "Відкрити історію (1 нат.), очистити все (2 нат.)"
+#: ClipHistory/clip.py:312
+msgid "Unpinned"
+msgstr "Відкріплено"
 
-#: clip.py:353
+#: ClipHistory/clip.py:324
+msgid "Moved up"
+msgstr "Переміщено вгору"
+
+#: ClipHistory/clip.py:336
+msgid "Moved down"
+msgstr "Переміщено вниз"
+
+#: ClipHistory/clip.py:341
+msgid "Cleared all non-pinned items"
+msgstr "Видалено всі незакріплені елементи"
+
+#: ClipHistory/clip.py:347
+msgid "Clear All"
+msgstr "Очистити все"
+
+#: ClipHistory/clip.py:353
+msgid "Unpin"
+msgstr "Відкріпити"
+
+#: ClipHistory/clip.py:353
 msgid "Pin"
 msgstr "Закріпити"
 
-#: clip.py:353
-msgid "Unpin"
-msgstr "Відкріпити"
+#: ClipHistory/clip.py:356
+msgid "Move Up"
+msgstr "Перемістити вгору"
+
+#: ClipHistory/clip.py:357
+msgid "Move Down"
+msgstr "Перемістити вниз"
+
+#: ClipHistory/clip.py:359
+msgid "Edit"
+msgstr "Редагувати"
+
+#: ClipHistory/clip.py:360
+msgid "Delete"
+msgstr "Видалити"
