@@ -1,0 +1,121 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ClipHistory 2026.5.1\n"
+"Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
+"POT-Creation-Date: 2026-05-08 10:54+0700\n"
+"PO-Revision-Date: 2026-05-08 10:54+0700\n"
+"Last-Translator: chaiBot and Malee Yamazaki\n"
+"Language-Team: Czech\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: DevOn Addon\n"
+
+#: clip.py:215
+msgid "&Cancel"
+msgstr "&Storno"
+
+#: clip.py:265
+msgid "&Close"
+msgstr "&Zavřít"
+
+#: clip.py:214
+msgid "&OK"
+msgstr "&OK"
+
+#: clip.py:263
+msgid "&Paste"
+msgstr "&Vložit"
+
+#: clip.py:439
+msgid "Clear All"
+msgstr "Vymazat vše"
+
+#: __init__.py:200
+msgid "Cleared all"
+msgstr "Vše vymazáno"
+
+#: clip.py:433
+msgid "Cleared all non-pinned items"
+msgstr "Všechny nepřipnuté položky byly vymazány"
+
+#: clip.py:243
+msgid "Clip History"
+msgstr "Historie schránky"
+
+#: clip.py:452
+msgid "Delete"
+msgstr "Smazat"
+
+#: clip.py:378
+msgid "Deleted"
+msgstr "Smazáno"
+
+#: clip.py:200
+msgid "Display name (optional):"
+msgstr "Zobrazované jméno (volitelné):"
+
+#: clip.py:451
+msgid "Edit"
+msgstr "Upravit"
+
+#: clip.py:388
+msgid "Edit Item"
+msgstr "Upravit položku"
+
+#: clip.py:392
+msgid "Item edited"
+msgstr "Položka upravena"
+
+#: clip.py:449
+msgid "Move Down"
+msgstr "Přesunout dolů"
+
+#: clip.py:448
+msgid "Move Up"
+msgstr "Přesunout nahoru"
+
+#: clip.py:428
+msgid "Moved down"
+msgstr "Přesunuto dolů"
+
+#: clip.py:416
+msgid "Moved up"
+msgstr "Přesunuto nahoru"
+
+#: __init__.py:209
+msgid "Opens clip history (single) clears all (double)"
+msgstr "Otevře historii (jeden stisk), vymaže vše (dva stisky)"
+
+#: clip.py:358
+msgid "Paste"
+msgstr "Vložit"
+
+#: clip.py:370
+msgid "Pasted"
+msgstr "Vloženo"
+
+#: clip.py:445
+msgid "Pin"
+msgstr "Připnout"
+
+#: clip.py:404
+msgid "Pinned"
+msgstr "Připnuto"
+
+#: clip.py:259
+msgid "Text"
+msgstr "Text"
+
+#: clip.py:205
+msgid "Text content:"
+msgstr "Textový obsah:"
+
+#: clip.py:445
+msgid "Unpin"
+msgstr "Odepnout"
+
+#: clip.py:404
+msgid "Unpinned"
+msgstr "Odepnuto"

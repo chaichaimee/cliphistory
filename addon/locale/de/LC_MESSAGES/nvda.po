@@ -1,62 +1,121 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: ClipHistory 2026.4.2\n"
+"Project-Id-Version: ClipHistory 2026.5.1\n"
+"Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
+"POT-Creation-Date: 2026-05-08 10:54+0700\n"
+"PO-Revision-Date: 2026-05-08 10:54+0700\n"
+"Last-Translator: chaiBot and Malee Yamazaki\n"
+"Language-Team: German\n"
 "Language: de\n"
+"MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: DevOn Addon\n"
 
-#: clip.py:158
+#: clip.py:215
 msgid "&Cancel"
 msgstr "&Abbrechen"
 
-#: clip.py:204
+#: clip.py:265
 msgid "&Close"
 msgstr "&Schließen"
 
-#: clip.py:157
+#: clip.py:214
 msgid "&OK"
 msgstr "&OK"
 
-#: clip.py:202
+#: clip.py:263
 msgid "&Paste"
-msgstr "Einfü&gen"
+msgstr "&Einfügen"
 
-#: clip.py:347
+#: clip.py:439
 msgid "Clear All"
 msgstr "Alles löschen"
 
-#: clip.py:183
+#: __init__.py:200
+msgid "Cleared all"
+msgstr "Alles gelöscht"
+
+#: clip.py:433
+msgid "Cleared all non-pinned items"
+msgstr "Alle nicht angehefteten Elemente gelöscht"
+
+#: clip.py:243
 msgid "Clip History"
 msgstr "Zwischenablage-Verlauf"
 
-#: clip.py:360
+#: clip.py:452
 msgid "Delete"
 msgstr "Löschen"
 
-#: clip.py:287
+#: clip.py:378
 msgid "Deleted"
 msgstr "Gelöscht"
 
-#: clip.py:359
+#: clip.py:200
+msgid "Display name (optional):"
+msgstr "Anzeigename (optional):"
+
+#: clip.py:451
 msgid "Edit"
 msgstr "Bearbeiten"
 
-#: clip.py:357
+#: clip.py:388
+msgid "Edit Item"
+msgstr "Eintrag bearbeiten"
+
+#: clip.py:392
+msgid "Item edited"
+msgstr "Eintrag bearbeitet"
+
+#: clip.py:449
 msgid "Move Down"
 msgstr "Nach unten verschieben"
 
-#: clip.py:356
+#: clip.py:448
 msgid "Move Up"
 msgstr "Nach oben verschieben"
 
-#: __init__.py:82
-msgid "Opens clip history (single) clears all (double)"
-msgstr "Öffnet den Verlauf (1x tippen), löscht alles (2x tippen)"
+#: clip.py:428
+msgid "Moved down"
+msgstr "Nach unten verschoben"
 
-#: clip.py:353
+#: clip.py:416
+msgid "Moved up"
+msgstr "Nach oben verschoben"
+
+#: __init__.py:209
+msgid "Opens clip history (single) clears all (double)"
+msgstr "Verlauf öffnen (einmal drücken), alles löschen (zweimal)"
+
+#: clip.py:358
+msgid "Paste"
+msgstr "Einfügen"
+
+#: clip.py:370
+msgid "Pasted"
+msgstr "Eingefügt"
+
+#: clip.py:445
 msgid "Pin"
 msgstr "Anheften"
 
-#: clip.py:353
+#: clip.py:404
+msgid "Pinned"
+msgstr "Angeheftet"
+
+#: clip.py:259
+msgid "Text"
+msgstr "Text"
+
+#: clip.py:205
+msgid "Text content:"
+msgstr "Textinhalt:"
+
+#: clip.py:445
 msgid "Unpin"
-msgstr "Lösen"
+msgstr "Anheften aufheben"
+
+#: clip.py:404
+msgid "Unpinned"
+msgstr "Anheften aufgehoben"

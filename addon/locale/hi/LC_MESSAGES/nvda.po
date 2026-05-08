@@ -1,0 +1,121 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ClipHistory 2026.5.1\n"
+"Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
+"POT-Creation-Date: 2026-05-08 10:54+0700\n"
+"PO-Revision-Date: 2026-05-08 10:54+0700\n"
+"Last-Translator: chaiBot and Malee Yamazaki\n"
+"Language-Team: Hindi\n"
+"Language: hi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: DevOn Addon\n"
+
+#: clip.py:215
+msgid "&Cancel"
+msgstr "रद्द करें (&C)"
+
+#: clip.py:265
+msgid "&Close"
+msgstr "बंद करें (&C)"
+
+#: clip.py:214
+msgid "&OK"
+msgstr "ठीक है (&O)"
+
+#: clip.py:263
+msgid "&Paste"
+msgstr "चिपकाएं (&P)"
+
+#: clip.py:439
+msgid "Clear All"
+msgstr "सभी साफ़ करें"
+
+#: __init__.py:200
+msgid "Cleared all"
+msgstr "सभी साफ़ कर दिया गया"
+
+#: clip.py:433
+msgid "Cleared all non-pinned items"
+msgstr "सभी अपिन किए गए आइटम साफ़ कर दिए गए"
+
+#: clip.py:243
+msgid "Clip History"
+msgstr "क्लिपबोर्ड इतिहास"
+
+#: clip.py:452
+msgid "Delete"
+msgstr "हटाएं"
+
+#: clip.py:378
+msgid "Deleted"
+msgstr "हटा दिया गया"
+
+#: clip.py:200
+msgid "Display name (optional):"
+msgstr "प्रदर्शित नाम (वैकल्पिक):"
+
+#: clip.py:451
+msgid "Edit"
+msgstr "संपादित करें"
+
+#: clip.py:388
+msgid "Edit Item"
+msgstr "आइटम संपादित करें"
+
+#: clip.py:392
+msgid "Item edited"
+msgstr "आइटम संपादित किया गया"
+
+#: clip.py:449
+msgid "Move Down"
+msgstr "नीचे ले जाएं"
+
+#: clip.py:448
+msgid "Move Up"
+msgstr "ऊपर ले जाएं"
+
+#: clip.py:428
+msgid "Moved down"
+msgstr "नीचे ले जाया गया"
+
+#: clip.py:416
+msgid "Moved up"
+msgstr "ऊपर ले जाया गया"
+
+#: __init__.py:209
+msgid "Opens clip history (single) clears all (double)"
+msgstr "इतिहास खोलें (एक बार), सब साफ़ करें (दो बार दबाएं)"
+
+#: clip.py:358
+msgid "Paste"
+msgstr "चिपकाएं"
+
+#: clip.py:370
+msgid "Pasted"
+msgstr "चिपकाया गया"
+
+#: clip.py:445
+msgid "Pin"
+msgstr "पिन करें"
+
+#: clip.py:404
+msgid "Pinned"
+msgstr "पिन किया गया"
+
+#: clip.py:259
+msgid "Text"
+msgstr "टेक्स्ट"
+
+#: clip.py:205
+msgid "Text content:"
+msgstr "टेक्स्ट सामग्री:"
+
+#: clip.py:445
+msgid "Unpin"
+msgstr "अनपिन करें"
+
+#: clip.py:404
+msgid "Unpinned"
+msgstr "अनपिन किया गया"

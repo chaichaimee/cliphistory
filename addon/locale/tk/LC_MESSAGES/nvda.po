@@ -1,0 +1,121 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ClipHistory 2026.5.1\n"
+"Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
+"POT-Creation-Date: 2026-05-08 10:54+0700\n"
+"PO-Revision-Date: 2026-05-08 10:54+0700\n"
+"Last-Translator: chaiBot and Malee Yamazaki\n"
+"Language-Team: Turkmen\n"
+"Language: tk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: DevOn Addon\n"
+
+#: clip.py:215
+msgid "&Cancel"
+msgstr "Ýat&yr"
+
+#: clip.py:265
+msgid "&Close"
+msgstr "&Ýap"
+
+#: clip.py:214
+msgid "&OK"
+msgstr "&Bolýar"
+
+#: clip.py:263
+msgid "&Paste"
+msgstr "&Goý"
+
+#: clip.py:439
+msgid "Clear All"
+msgstr "Ählisini arassala"
+
+#: __init__.py:200
+msgid "Cleared all"
+msgstr "Ählisi arassalandy"
+
+#: clip.py:433
+msgid "Cleared all non-pinned items"
+msgstr "Berkidilmedik ähli zatlar arassalandy"
+
+#: clip.py:243
+msgid "Clip History"
+msgstr "Gysgyç taryhy"
+
+#: clip.py:452
+msgid "Delete"
+msgstr "Öçür"
+
+#: clip.py:378
+msgid "Deleted"
+msgstr "Öçürildi"
+
+#: clip.py:200
+msgid "Display name (optional):"
+msgstr "Görkezilýän ady (islege görä):"
+
+#: clip.py:451
+msgid "Edit"
+msgstr "Düzet"
+
+#: clip.py:388
+msgid "Edit Item"
+msgstr "Zady düzet"
+
+#: clip.py:392
+msgid "Item edited"
+msgstr "Zat düzedildi"
+
+#: clip.py:449
+msgid "Move Down"
+msgstr "Aşak süýşür"
+
+#: clip.py:448
+msgid "Move Up"
+msgstr "Ýokary süýşür"
+
+#: clip.py:428
+msgid "Moved down"
+msgstr "Aşak süýşürildi"
+
+#: clip.py:416
+msgid "Moved up"
+msgstr "Ýokary süýşürildi"
+
+#: __init__.py:209
+msgid "Opens clip history (single) clears all (double)"
+msgstr "Taryhy aç (bir gezek), ählisini arassala (iki gezek)"
+
+#: clip.py:358
+msgid "Paste"
+msgstr "Goý"
+
+#: clip.py:370
+msgid "Pasted"
+msgstr "Goýuldy"
+
+#: clip.py:445
+msgid "Pin"
+msgstr "Berkit"
+
+#: clip.py:404
+msgid "Pinned"
+msgstr "Berkidildi"
+
+#: clip.py:259
+msgid "Text"
+msgstr "Tekst"
+
+#: clip.py:205
+msgid "Text content:"
+msgstr "Tekst mazmuny:"
+
+#: clip.py:445
+msgid "Unpin"
+msgstr "Aýyr"
+
+#: clip.py:404
+msgid "Unpinned"
+msgstr "Aýрылды"

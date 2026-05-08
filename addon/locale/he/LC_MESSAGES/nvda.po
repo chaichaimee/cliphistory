@@ -1,0 +1,121 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ClipHistory 2026.5.1\n"
+"Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
+"POT-Creation-Date: 2026-05-08 10:54+0700\n"
+"PO-Revision-Date: 2026-05-08 10:54+0700\n"
+"Last-Translator: chaiBot and Malee Yamazaki\n"
+"Language-Team: Hebrew\n"
+"Language: he\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: DevOn Addon\n"
+
+#: clip.py:215
+msgid "&Cancel"
+msgstr "&ביטול"
+
+#: clip.py:265
+msgid "&Close"
+msgstr "&סגור"
+
+#: clip.py:214
+msgid "&OK"
+msgstr "&אישור"
+
+#: clip.py:263
+msgid "&Paste"
+msgstr "ה&דבק"
+
+#: clip.py:439
+msgid "Clear All"
+msgstr "נקה הכל"
+
+#: __init__.py:200
+msgid "Cleared all"
+msgstr "הכל נוקה"
+
+#: clip.py:433
+msgid "Cleared all non-pinned items"
+msgstr "כל הפריטים הלא נעוצים נוקו"
+
+#: clip.py:243
+msgid "Clip History"
+msgstr "היסטוריית לוח"
+
+#: clip.py:452
+msgid "Delete"
+msgstr "מחק"
+
+#: clip.py:378
+msgid "Deleted"
+msgstr "נמחק"
+
+#: clip.py:200
+msgid "Display name (optional):"
+msgstr "שם תצוגה (אופציונלי):"
+
+#: clip.py:451
+msgid "Edit"
+msgstr "ערוך"
+
+#: clip.py:388
+msgid "Edit Item"
+msgstr "ערוך פריט"
+
+#: clip.py:392
+msgid "Item edited"
+msgstr "הפריט נערך"
+
+#: clip.py:449
+msgid "Move Down"
+msgstr "הזז למטה"
+
+#: clip.py:448
+msgid "Move Up"
+msgstr "הזז למעלה"
+
+#: clip.py:428
+msgid "Moved down"
+msgstr "הועבר למטה"
+
+#: clip.py:416
+msgid "Moved up"
+msgstr "הועבר למעלה"
+
+#: __init__.py:209
+msgid "Opens clip history (single) clears all (double)"
+msgstr "פתיחת היסטוריה (לחיצה אחת), ניקוי הכל (לחיצה כפולה)"
+
+#: clip.py:358
+msgid "Paste"
+msgstr "הדבק"
+
+#: clip.py:370
+msgid "Pasted"
+msgstr "הודבק"
+
+#: clip.py:445
+msgid "Pin"
+msgstr "נעץ"
+
+#: clip.py:404
+msgid "Pinned"
+msgstr "נעוץ"
+
+#: clip.py:259
+msgid "Text"
+msgstr "טקסט"
+
+#: clip.py:205
+msgid "Text content:"
+msgstr "תוכן טקסט:"
+
+#: clip.py:445
+msgid "Unpin"
+msgstr "בטל נעיצה"
+
+#: clip.py:404
+msgid "Unpinned"
+msgstr "נעיצה בוטלה"

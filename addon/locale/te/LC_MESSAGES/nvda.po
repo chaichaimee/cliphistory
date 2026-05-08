@@ -1,0 +1,121 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ClipHistory 2026.5.1\n"
+"Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
+"POT-Creation-Date: 2026-05-08 10:54+0700\n"
+"PO-Revision-Date: 2026-05-08 10:54+0700\n"
+"Last-Translator: chaiBot and Malee Yamazaki\n"
+"Language-Team: Telugu\n"
+"Language: te\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: DevOn Addon\n"
+
+#: clip.py:215
+msgid "&Cancel"
+msgstr "రద్దు చేయి (&C)"
+
+#: clip.py:265
+msgid "&Close"
+msgstr "మూసివేయి (&C)"
+
+#: clip.py:214
+msgid "&OK"
+msgstr "సరే (&O)"
+
+#: clip.py:263
+msgid "&Paste"
+msgstr "అతికించు (&P)"
+
+#: clip.py:439
+msgid "Clear All"
+msgstr "అన్నీ తుడిచివేయి"
+
+#: __init__.py:200
+msgid "Cleared all"
+msgstr "అన్నీ తుడిచివేయబడ్డాయి"
+
+#: clip.py:433
+msgid "Cleared all non-pinned items"
+msgstr "పిన్ చేయనివన్నీ తుడిచివేయబడ్డాయి"
+
+#: clip.py:243
+msgid "Clip History"
+msgstr "క్లిప్ చరిత్ర"
+
+#: clip.py:452
+msgid "Delete"
+msgstr "తొలగించు"
+
+#: clip.py:378
+msgid "Deleted"
+msgstr "తొలగించబడింది"
+
+#: clip.py:200
+msgid "Display name (optional):"
+msgstr "ప్రదర్శన పేరు (ఐచ్ఛికం):"
+
+#: clip.py:451
+msgid "Edit"
+msgstr "సవరించు"
+
+#: clip.py:388
+msgid "Edit Item"
+msgstr "అంశాన్ని సవరించు"
+
+#: clip.py:392
+msgid "Item edited"
+msgstr "అంశం సవరించబడింది"
+
+#: clip.py:449
+msgid "Move Down"
+msgstr "క్రిందికి జరుపు"
+
+#: clip.py:448
+msgid "Move Up"
+msgstr "పైకి జరుపు"
+
+#: clip.py:428
+msgid "Moved down"
+msgstr "క్రిందికి జరపబడింది"
+
+#: clip.py:416
+msgid "Moved up"
+msgstr "పైకి జరపబడింది"
+
+#: __init__.py:209
+msgid "Opens clip history (single) clears all (double)"
+msgstr "చరిత్రను తెరువు (ఒకసారి), అన్నీ తుడిచివేయి (రెండుసార్లు)"
+
+#: clip.py:358
+msgid "Paste"
+msgstr "అతికించు"
+
+#: clip.py:370
+msgid "Pasted"
+msgstr "అతికించబడింది"
+
+#: clip.py:445
+msgid "Pin"
+msgstr "పిన్ చేయి"
+
+#: clip.py:404
+msgid "Pinned"
+msgstr "పిన్ చేయబడింది"
+
+#: clip.py:259
+msgid "Text"
+msgstr "పాఠ్యం"
+
+#: clip.py:205
+msgid "Text content:"
+msgstr "పాఠ్యం కంటెంట్:"
+
+#: clip.py:445
+msgid "Unpin"
+msgstr "పిన్ తొలగించు"
+
+#: clip.py:404
+msgid "Unpinned"
+msgstr "పిన్ తొలగించబడింది"

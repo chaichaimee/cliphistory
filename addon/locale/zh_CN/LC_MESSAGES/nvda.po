@@ -1,0 +1,121 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ClipHistory 2026.5.1\n"
+"Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
+"POT-Creation-Date: 2026-05-08 10:54+0700\n"
+"PO-Revision-Date: 2026-05-08 10:54+0700\n"
+"Last-Translator: chaiBot and Malee Yamazaki\n"
+"Language-Team: Chinese (Simplified)\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: DevOn Addon\n"
+
+#: clip.py:215
+msgid "&Cancel"
+msgstr "取消(&C)"
+
+#: clip.py:265
+msgid "&Close"
+msgstr "关闭(&C)"
+
+#: clip.py:214
+msgid "&OK"
+msgstr "确定(&O)"
+
+#: clip.py:263
+msgid "&Paste"
+msgstr "粘贴(&P)"
+
+#: clip.py:439
+msgid "Clear All"
+msgstr "全部清除"
+
+#: __init__.py:200
+msgid "Cleared all"
+msgstr "已全部清除"
+
+#: clip.py:433
+msgid "Cleared all non-pinned items"
+msgstr "已清除所有未固定项目"
+
+#: clip.py:243
+msgid "Clip History"
+msgstr "剪贴板历史"
+
+#: clip.py:452
+msgid "Delete"
+msgstr "删除"
+
+#: clip.py:378
+msgid "Deleted"
+msgstr "已删除"
+
+#: clip.py:200
+msgid "Display name (optional):"
+msgstr "显示名称 (可选):"
+
+#: clip.py:451
+msgid "Edit"
+msgstr "编辑"
+
+#: clip.py:388
+msgid "Edit Item"
+msgstr "编辑项目"
+
+#: clip.py:392
+msgid "Item edited"
+msgstr "项目已编辑"
+
+#: clip.py:449
+msgid "Move Down"
+msgstr "下移"
+
+#: clip.py:448
+msgid "Move Up"
+msgstr "上移"
+
+#: clip.py:428
+msgid "Moved down"
+msgstr "已下移"
+
+#: clip.py:416
+msgid "Moved up"
+msgstr "已上移"
+
+#: __init__.py:209
+msgid "Opens clip history (single) clears all (double)"
+msgstr "打开历史 (按一次)，清除全部 (按两次)"
+
+#: clip.py:358
+msgid "Paste"
+msgstr "粘贴"
+
+#: clip.py:370
+msgid "Pasted"
+msgstr "已粘贴"
+
+#: clip.py:445
+msgid "Pin"
+msgstr "固定"
+
+#: clip.py:404
+msgid "Pinned"
+msgstr "已固定"
+
+#: clip.py:259
+msgid "Text"
+msgstr "文本"
+
+#: clip.py:205
+msgid "Text content:"
+msgstr "文本内容:"
+
+#: clip.py:445
+msgid "Unpin"
+msgstr "取消固定"
+
+#: clip.py:404
+msgid "Unpinned"
+msgstr "已取消固定"

@@ -1,0 +1,121 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ClipHistory 2026.5.1\n"
+"Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
+"POT-Creation-Date: 2026-05-08 10:54+0700\n"
+"PO-Revision-Date: 2026-05-08 10:54+0700\n"
+"Last-Translator: chaiBot and Malee Yamazaki\n"
+"Language-Team: Thai\n"
+"Language: th\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: DevOn Addon\n"
+
+#: clip.py:215
+msgid "&Cancel"
+msgstr "&ยกเลิก"
+
+#: clip.py:265
+msgid "&Close"
+msgstr "&ปิด"
+
+#: clip.py:214
+msgid "&OK"
+msgstr "&ตกลง"
+
+#: clip.py:263
+msgid "&Paste"
+msgstr "&วาง"
+
+#: clip.py:439
+msgid "Clear All"
+msgstr "ล้างทั้งหมด"
+
+#: __init__.py:200
+msgid "Cleared all"
+msgstr "ล้างข้อมูลทั้งหมดแล้ว"
+
+#: clip.py:433
+msgid "Cleared all non-pinned items"
+msgstr "ล้างรายการที่ไม่ได้ปักหมุดทั้งหมดแล้ว"
+
+#: clip.py:243
+msgid "Clip History"
+msgstr "ประวัติการคลิป"
+
+#: clip.py:452
+msgid "Delete"
+msgstr "ลบ"
+
+#: clip.py:378
+msgid "Deleted"
+msgstr "ลบแล้ว"
+
+#: clip.py:200
+msgid "Display name (optional):"
+msgstr "ชื่อที่แสดง (ไม่บังคับ):"
+
+#: clip.py:451
+msgid "Edit"
+msgstr "แก้ไข"
+
+#: clip.py:388
+msgid "Edit Item"
+msgstr "แก้ไขรายการ"
+
+#: clip.py:392
+msgid "Item edited"
+msgstr "แก้ไขรายการแล้ว"
+
+#: clip.py:449
+msgid "Move Down"
+msgstr "เลื่อนลง"
+
+#: clip.py:448
+msgid "Move Up"
+msgstr "เลื่อนขึ้น"
+
+#: clip.py:428
+msgid "Moved down"
+msgstr "เลื่อนลงแล้ว"
+
+#: clip.py:416
+msgid "Moved up"
+msgstr "เลื่อนขึ้นแล้ว"
+
+#: __init__.py:209
+msgid "Opens clip history (single) clears all (double)"
+msgstr "เปิดประวัติ (กดครั้งเดียว) ล้างทั้งหมด (กดสองครั้ง)"
+
+#: clip.py:358
+msgid "Paste"
+msgstr "วาง"
+
+#: clip.py:370
+msgid "Pasted"
+msgstr "วางแล้ว"
+
+#: clip.py:445
+msgid "Pin"
+msgstr "ปักหมุด"
+
+#: clip.py:404
+msgid "Pinned"
+msgstr "ปักหมุดแล้ว"
+
+#: clip.py:259
+msgid "Text"
+msgstr "ข้อความ"
+
+#: clip.py:205
+msgid "Text content:"
+msgstr "เนื้อหาข้อความ:"
+
+#: clip.py:445
+msgid "Unpin"
+msgstr "ถอนหมุด"
+
+#: clip.py:404
+msgid "Unpinned"
+msgstr "ถอนหมุดแล้ว"

@@ -1,0 +1,121 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ClipHistory 2026.5.1\n"
+"Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
+"POT-Creation-Date: 2026-05-08 10:54+0700\n"
+"PO-Revision-Date: 2026-05-08 10:54+0700\n"
+"Last-Translator: chaiBot and Malee Yamazaki\n"
+"Language-Team: Finnish\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: DevOn Addon\n"
+
+#: clip.py:215
+msgid "&Cancel"
+msgstr "&Peruuta"
+
+#: clip.py:265
+msgid "&Close"
+msgstr "&Sulje"
+
+#: clip.py:214
+msgid "&OK"
+msgstr "&OK"
+
+#: clip.py:263
+msgid "&Paste"
+msgstr "&Liitä"
+
+#: clip.py:439
+msgid "Clear All"
+msgstr "Tyhjennä kaikki"
+
+#: __init__.py:200
+msgid "Cleared all"
+msgstr "Kaikki tyhjennetty"
+
+#: clip.py:433
+msgid "Cleared all non-pinned items"
+msgstr "Kaikki kiinnittämättömät kohteet tyhjennetty"
+
+#: clip.py:243
+msgid "Clip History"
+msgstr "Leikepöydän historia"
+
+#: clip.py:452
+msgid "Delete"
+msgstr "Poista"
+
+#: clip.py:378
+msgid "Deleted"
+msgstr "Poistettu"
+
+#: clip.py:200
+msgid "Display name (optional):"
+msgstr "Näyttönimi (valinnainen):"
+
+#: clip.py:451
+msgid "Edit"
+msgstr "Muokkaa"
+
+#: clip.py:388
+msgid "Edit Item"
+msgstr "Muokkaa kohdetta"
+
+#: clip.py:392
+msgid "Item edited"
+msgstr "Kohdetta muokattu"
+
+#: clip.py:449
+msgid "Move Down"
+msgstr "Siirrä alas"
+
+#: clip.py:448
+msgid "Move Up"
+msgstr "Siirrä ylös"
+
+#: clip.py:428
+msgid "Moved down"
+msgstr "Siirretty alas"
+
+#: clip.py:416
+msgid "Moved up"
+msgstr "Siirretty ylös"
+
+#: __init__.py:209
+msgid "Opens clip history (single) clears all (double)"
+msgstr "Avaa historia (yksi painallus), tyhjennä (kaksi painallusta)"
+
+#: clip.py:358
+msgid "Paste"
+msgstr "Liitä"
+
+#: clip.py:370
+msgid "Pasted"
+msgstr "Liitetty"
+
+#: clip.py:445
+msgid "Pin"
+msgstr "Kiinnitä"
+
+#: clip.py:404
+msgid "Pinned"
+msgstr "Kiinnitetty"
+
+#: clip.py:259
+msgid "Text"
+msgstr "Teksti"
+
+#: clip.py:205
+msgid "Text content:"
+msgstr "Tekstisisältö:"
+
+#: clip.py:445
+msgid "Unpin"
+msgstr "Poista kiinnitys"
+
+#: clip.py:404
+msgid "Unpinned"
+msgstr "Kiinnitys poistettu"

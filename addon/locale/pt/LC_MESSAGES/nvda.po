@@ -1,0 +1,121 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ClipHistory 2026.5.1\n"
+"Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
+"POT-Creation-Date: 2026-05-08 10:54+0700\n"
+"PO-Revision-Date: 2026-05-08 10:54+0700\n"
+"Last-Translator: chaiBot and Malee Yamazaki\n"
+"Language-Team: Portuguese\n"
+"Language: pt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: DevOn Addon\n"
+
+#: clip.py:215
+msgid "&Cancel"
+msgstr "&Cancelar"
+
+#: clip.py:265
+msgid "&Close"
+msgstr "&Fechar"
+
+#: clip.py:214
+msgid "&OK"
+msgstr "&OK"
+
+#: clip.py:263
+msgid "&Paste"
+msgstr "Co&lar"
+
+#: clip.py:439
+msgid "Clear All"
+msgstr "Limpar tudo"
+
+#: __init__.py:200
+msgid "Cleared all"
+msgstr "Tudo limpo"
+
+#: clip.py:433
+msgid "Cleared all non-pinned items"
+msgstr "Limpados todos os itens não fixados"
+
+#: clip.py:243
+msgid "Clip History"
+msgstr "Histórico da área de transferência"
+
+#: clip.py:452
+msgid "Delete"
+msgstr "Eliminar"
+
+#: clip.py:378
+msgid "Deleted"
+msgstr "Eliminado"
+
+#: clip.py:200
+msgid "Display name (optional):"
+msgstr "Nome de exibição (opcional):"
+
+#: clip.py:451
+msgid "Edit"
+msgstr "Editar"
+
+#: clip.py:388
+msgid "Edit Item"
+msgstr "Editar item"
+
+#: clip.py:392
+msgid "Item edited"
+msgstr "Item editado"
+
+#: clip.py:449
+msgid "Move Down"
+msgstr "Mover para baixo"
+
+#: clip.py:448
+msgid "Move Up"
+msgstr "Mover para cima"
+
+#: clip.py:428
+msgid "Moved down"
+msgstr "Movido para baixo"
+
+#: clip.py:416
+msgid "Moved up"
+msgstr "Movido para cima"
+
+#: __init__.py:209
+msgid "Opens clip history (single) clears all (double)"
+msgstr "Abre histórico (um toque), limpa tudo (dois toques)"
+
+#: clip.py:358
+msgid "Paste"
+msgstr "Colar"
+
+#: clip.py:370
+msgid "Pasted"
+msgstr "Colado"
+
+#: clip.py:445
+msgid "Pin"
+msgstr "Fixar"
+
+#: clip.py:404
+msgid "Pinned"
+msgstr "Fixado"
+
+#: clip.py:259
+msgid "Text"
+msgstr "Texto"
+
+#: clip.py:205
+msgid "Text content:"
+msgstr "Conteúdo do texto:"
+
+#: clip.py:445
+msgid "Unpin"
+msgstr "Desafixar"
+
+#: clip.py:404
+msgid "Unpinned"
+msgstr "Desafixado"

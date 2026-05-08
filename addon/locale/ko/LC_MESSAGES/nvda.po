@@ -1,0 +1,121 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ClipHistory 2026.5.1\n"
+"Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
+"POT-Creation-Date: 2026-05-08 10:54+0700\n"
+"PO-Revision-Date: 2026-05-08 10:54+0700\n"
+"Last-Translator: chaiBot and Malee Yamazaki\n"
+"Language-Team: Korean\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: DevOn Addon\n"
+
+#: clip.py:215
+msgid "&Cancel"
+msgstr "취소(&C)"
+
+#: clip.py:265
+msgid "&Close"
+msgstr "닫기(&C)"
+
+#: clip.py:214
+msgid "&OK"
+msgstr "확인(&O)"
+
+#: clip.py:263
+msgid "&Paste"
+msgstr "붙여넣기(&P)"
+
+#: clip.py:439
+msgid "Clear All"
+msgstr "모두 지우기"
+
+#: __init__.py:200
+msgid "Cleared all"
+msgstr "모두 지워짐"
+
+#: clip.py:433
+msgid "Cleared all non-pinned items"
+msgstr "고정되지 않은 모든 항목이 지워짐"
+
+#: clip.py:243
+msgid "Clip History"
+msgstr "클립보드 기록"
+
+#: clip.py:452
+msgid "Delete"
+msgstr "삭제"
+
+#: clip.py:378
+msgid "Deleted"
+msgstr "삭제됨"
+
+#: clip.py:200
+msgid "Display name (optional):"
+msgstr "표시 이름 (선택 사항):"
+
+#: clip.py:451
+msgid "Edit"
+msgstr "편집"
+
+#: clip.py:388
+msgid "Edit Item"
+msgstr "항목 편집"
+
+#: clip.py:392
+msgid "Item edited"
+msgstr "항목이 편집됨"
+
+#: clip.py:449
+msgid "Move Down"
+msgstr "아래로 이동"
+
+#: clip.py:448
+msgid "Move Up"
+msgstr "위로 이동"
+
+#: clip.py:428
+msgid "Moved down"
+msgstr "아래로 이동됨"
+
+#: clip.py:416
+msgid "Moved up"
+msgstr "위로 이동됨"
+
+#: __init__.py:209
+msgid "Opens clip history (single) clears all (double)"
+msgstr "기록 열기 (한 번), 모두 지우기 (두 번 누름)"
+
+#: clip.py:358
+msgid "Paste"
+msgstr "붙여넣기"
+
+#: clip.py:370
+msgid "Pasted"
+msgstr "붙여넣음"
+
+#: clip.py:445
+msgid "Pin"
+msgstr "고정"
+
+#: clip.py:404
+msgid "Pinned"
+msgstr "고정됨"
+
+#: clip.py:259
+msgid "Text"
+msgstr "텍스트"
+
+#: clip.py:205
+msgid "Text content:"
+msgstr "텍스트 내용:"
+
+#: clip.py:445
+msgid "Unpin"
+msgstr "고정 해제"
+
+#: clip.py:404
+msgid "Unpinned"
+msgstr "고정 해제됨"

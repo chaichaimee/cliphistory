@@ -12,13 +12,38 @@ import core
 import scriptHandler
 import time
 import logging
+import ctypes
+import ctypes.wintypes
 
 from . import clipboard_utils
-from .clip import ClipHistoryManager
+from .clip import ClipHistoryManager, ClipHistoryDialog
 
 addonHandler.initTranslation()
 log = logging.getLogger(__name__)
 
+WM_CLIPBOARDUPDATE = 0x031D
+
+WNDPROC = ctypes.WINFUNCTYPE(
+	ctypes.c_int,
+	ctypes.wintypes.HWND,
+	ctypes.c_uint,
+	ctypes.wintypes.WPARAM,
+	ctypes.wintypes.LPARAM
+)
+
+class WNDCLASS(ctypes.Structure):
+	_fields_ = [
+		("style", ctypes.c_uint),
+		("lpfnWndProc", ctypes.c_void_p),
+		("cbClsExtra", ctypes.c_int),
+		("cbWndExtra", ctypes.c_int),
+		("hInstance", ctypes.wintypes.HINSTANCE),
+		("hIcon", ctypes.c_void_p),
+		("hCursor", ctypes.c_void_p),
+		("hbrBackground", ctypes.c_void_p),
+		("lpszMenuName", ctypes.wintypes.LPCWSTR),
+		("lpszClassName", ctypes.wintypes.LPCWSTR),
+	]
 
 class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	scriptCategory = "ClipHistory"
@@ -27,13 +52,20 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		super().__init__()
 		try:
 			self.manager = ClipHistoryManager()
-			self.timer = wx.Timer()
-			self.timer.Bind(wx.EVT_TIMER, self.on_clipboard_check)
-			self.timer.Start(500)
 			self.last_clipboard_text = ""
 			self.dialog = None
+			self._clipboard_listener_disabled = False
+			self._disable_timer = None
+			self._last_clipboard_process_time = 0
+			self._clipboard_throttle_ms = 50
 
-			# Multi‑tap handling
+			self._setup_api_types()
+
+			self._hwnd = None
+			self._wndclass = None
+			self._wndproc_callback = None
+			self._setup_clipboard_listener()
+
 			self._tap_count = 0
 			self._last_tap_time = 0
 			self._tap_timer = None
@@ -43,16 +75,82 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		except Exception as e:
 			log.error(f"ClipHistory initialization failed: {e}", exc_info=True)
 
-	def terminate(self):
-		if self.timer.IsRunning():
-			self.timer.Stop()
-		if self.dialog:
-			self.dialog.Destroy()
-		if hasattr(self, 'manager'):
-			self.manager.save()
-		log.info("ClipHistory plugin terminated")
+	def _setup_api_types(self):
+		user32 = ctypes.windll.user32
 
-	def on_clipboard_check(self, event):
+		user32.RegisterClassW.argtypes = [ctypes.POINTER(WNDCLASS)]
+		user32.RegisterClassW.restype = ctypes.c_uint16
+
+		user32.CreateWindowExW.argtypes = [
+			ctypes.c_uint, ctypes.wintypes.LPCWSTR, ctypes.wintypes.LPCWSTR,
+			ctypes.c_uint, ctypes.c_int, ctypes.c_int, ctypes.c_int, ctypes.c_int,
+			ctypes.wintypes.HWND, ctypes.wintypes.HMENU, ctypes.wintypes.HINSTANCE,
+			ctypes.c_void_p
+		]
+		user32.CreateWindowExW.restype = ctypes.wintypes.HWND
+
+		user32.AddClipboardFormatListener.argtypes = [ctypes.wintypes.HWND]
+		user32.AddClipboardFormatListener.restype = ctypes.wintypes.BOOL
+
+		user32.DefWindowProcW.argtypes = [
+			ctypes.wintypes.HWND, ctypes.c_uint,
+			ctypes.wintypes.WPARAM, ctypes.wintypes.LPARAM
+		]
+		user32.DefWindowProcW.restype = ctypes.c_int
+
+		user32.RemoveClipboardFormatListener.argtypes = [ctypes.wintypes.HWND]
+		user32.RemoveClipboardFormatListener.restype = ctypes.wintypes.BOOL
+
+		user32.DestroyWindow.argtypes = [ctypes.wintypes.HWND]
+		user32.DestroyWindow.restype = ctypes.wintypes.BOOL
+
+		user32.UnregisterClassW.argtypes = [ctypes.wintypes.LPCWSTR, ctypes.wintypes.HINSTANCE]
+		user32.UnregisterClassW.restype = ctypes.wintypes.BOOL
+
+	def _setup_clipboard_listener(self):
+		hinst = ctypes.windll.kernel32.GetModuleHandleW(None)
+		self._className = "ClipHistoryListenerClass"
+
+		self._wndproc_callback = WNDPROC(self._wnd_proc)
+
+		wndclass = WNDCLASS()
+		wndclass.lpszClassName = self._className
+		wndclass.hInstance = hinst
+		wndclass.lpfnWndProc = ctypes.cast(self._wndproc_callback, ctypes.c_void_p)
+
+		register_result = ctypes.windll.user32.RegisterClassW(ctypes.byref(wndclass))
+		if not register_result:
+			error_code = ctypes.windll.kernel32.GetLastError()
+			if error_code != 1410:
+				raise ctypes.WinError(error_code)
+
+		self._hwnd = ctypes.windll.user32.CreateWindowExW(
+			0, self._className, "ClipHistory Listener",
+			0, 0, 0, 0, 0, 0, 0, hinst, None
+		)
+		if not self._hwnd:
+			raise ctypes.WinError()
+
+		if not ctypes.windll.user32.AddClipboardFormatListener(self._hwnd):
+			raise ctypes.WinError()
+
+		self._wndclass = wndclass
+		log.info("Clipboard listener registered")
+
+	def _wnd_proc(self, hwnd, msg, wparam, lparam):
+		if msg == WM_CLIPBOARDUPDATE:
+			self._on_clipboard_update()
+		return ctypes.windll.user32.DefWindowProcW(hwnd, msg, wparam, lparam)
+
+	def _on_clipboard_update(self):
+		if self._clipboard_listener_disabled:
+			return
+
+		current_time = time.time() * 1000
+		if current_time - self._last_clipboard_process_time < self._clipboard_throttle_ms:
+			return
+		self._last_clipboard_process_time = current_time
+
 		try:
 			data = clipboard_utils.get_clipboard_data()
 			if data and data.get('text') and data['text'] != self.last_clipboard_text:
@@ -62,7 +160,35 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 				if self.dialog and self.dialog.IsShown():
 					wx.CallAfter(self.dialog.update_list)
 		except Exception as e:
-			log.warning(f"Clipboard check error: {e}")
+			log.warning(f"Clipboard update error: {e}")
+
+	def suppress_clipboard_next(self):
+		if self._disable_timer and self._disable_timer.IsRunning():
+			self._disable_timer.Stop()
+		self._clipboard_listener_disabled = True
+		self._disable_timer = core.callLater(500, self._enable_clipboard_listener)
+
+	def _enable_clipboard_listener(self):
+		self._clipboard_listener_disabled = False
+		self._disable_timer = None
+
+	def terminate(self):
+		if self._disable_timer and self._disable_timer.IsRunning():
+			self._disable_timer.Stop()
+		if self._hwnd:
+			ctypes.windll.user32.RemoveClipboardFormatListener(self._hwnd)
+			ctypes.windll.user32.DestroyWindow(self._hwnd)
+			self._hwnd = None
+		if self._wndclass:
+			hinst = ctypes.windll.kernel32.GetModuleHandleW(None)
+			ctypes.windll.user32.UnregisterClassW(self._className, hinst)
+			self._wndclass = None
+		self._wndproc_callback = None
+		if self.dialog:
+			self.dialog.Destroy()
+		if hasattr(self, 'manager'):
+			self.manager.save()
+		log.info("ClipHistory plugin terminated")
 
 	def _execute_tap_action(self):
 		log.debug(f"_execute_tap_action called with count: {self._tap_count}")
@@ -78,6 +204,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			log.error(f"Error in tap action: {e}")
 		finally:
 			self._tap_count = 0
+			self._tap_timer = None
 
 	@scriptHandler.script(gesture="kb:windows+v", description=_("Opens clip history (single) clears all (double)"))
 	def script_openClipHistory(self, gesture):
@@ -86,18 +213,20 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			self._tap_count = 0
 			if self._tap_timer and self._tap_timer.IsRunning():
 				self._tap_timer.Stop()
+
 		self._tap_count += 1
 		self._last_tap_time = current_time
+
 		if self._tap_timer and self._tap_timer.IsRunning():
 			self._tap_timer.Stop()
-		self._tap_timer = wx.CallLater(int(self._tap_threshold * 1000), self._execute_tap_action)
+
+		self._tap_timer = core.callLater(int(self._tap_threshold * 1000), self._execute_tap_action)
 
 	def show_dialog(self):
 		if self.dialog and self.dialog.IsShown():
 			self.dialog.Raise()
 			return
-		from .clip import ClipHistoryDialog
-		self.dialog = ClipHistoryDialog(gui.mainFrame, self.manager)
+		self.dialog = ClipHistoryDialog(gui.mainFrame, self.manager, self)
 		gui.mainFrame.prePopup()
 		self.dialog.Show()
 		self.dialog.CentreOnScreen()

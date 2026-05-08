@@ -1,0 +1,121 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ClipHistory 2026.5.1\n"
+"Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
+"POT-Creation-Date: 2026-05-08 10:54+0700\n"
+"PO-Revision-Date: 2026-05-08 10:54+0700\n"
+"Last-Translator: chaiBot and Malee Yamazaki\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: DevOn Addon\n"
+
+#: clip.py:215
+msgid "&Cancel"
+msgstr "キャンセル(&C)"
+
+#: clip.py:265
+msgid "&Close"
+msgstr "閉じる(&C)"
+
+#: clip.py:214
+msgid "&OK"
+msgstr "&OK"
+
+#: clip.py:263
+msgid "&Paste"
+msgstr "貼り付け(&P)"
+
+#: clip.py:439
+msgid "Clear All"
+msgstr "すべて消去"
+
+#: __init__.py:200
+msgid "Cleared all"
+msgstr "すべて消去しました"
+
+#: clip.py:433
+msgid "Cleared all non-pinned items"
+msgstr "固定されていないすべての項目を消去しました"
+
+#: clip.py:243
+msgid "Clip History"
+msgstr "クリップボードの履歴"
+
+#: clip.py:452
+msgid "Delete"
+msgstr "削除"
+
+#: clip.py:378
+msgid "Deleted"
+msgstr "削除しました"
+
+#: clip.py:200
+msgid "Display name (optional):"
+msgstr "表示名 (オプション):"
+
+#: clip.py:451
+msgid "Edit"
+msgstr "編集"
+
+#: clip.py:388
+msgid "Edit Item"
+msgstr "項目の編集"
+
+#: clip.py:392
+msgid "Item edited"
+msgstr "項目を編集しました"
+
+#: clip.py:449
+msgid "Move Down"
+msgstr "下に移動"
+
+#: clip.py:448
+msgid "Move Up"
+msgstr "上に移動"
+
+#: clip.py:428
+msgid "Moved down"
+msgstr "下に移動しました"
+
+#: clip.py:416
+msgid "Moved up"
+msgstr "上に移動しました"
+
+#: __init__.py:209
+msgid "Opens clip history (single) clears all (double)"
+msgstr "履歴を表示 (1回押す)、すべて消去 (2回押す)"
+
+#: clip.py:358
+msgid "Paste"
+msgstr "貼り付け"
+
+#: clip.py:370
+msgid "Pasted"
+msgstr "貼り付けました"
+
+#: clip.py:445
+msgid "Pin"
+msgstr "ピン留め"
+
+#: clip.py:404
+msgid "Pinned"
+msgstr "ピン留めしました"
+
+#: clip.py:259
+msgid "Text"
+msgstr "テキスト"
+
+#: clip.py:205
+msgid "Text content:"
+msgstr "テキスト内容:"
+
+#: clip.py:445
+msgid "Unpin"
+msgstr "ピン留め解除"
+
+#: clip.py:404
+msgid "Unpinned"
+msgstr "ピン留めを解除しました"

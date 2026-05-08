@@ -1,0 +1,121 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ClipHistory 2026.5.1\n"
+"Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
+"POT-Creation-Date: 2026-05-08 10:54+0700\n"
+"PO-Revision-Date: 2026-05-08 10:54+0700\n"
+"Last-Translator: chaiBot and Malee Yamazaki\n"
+"Language-Team: Uzbek\n"
+"Language: uz\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: DevOn Addon\n"
+
+#: clip.py:215
+msgid "&Cancel"
+msgstr "&Bekor qilish"
+
+#: clip.py:265
+msgid "&Close"
+msgstr "&Yopish"
+
+#: clip.py:214
+msgid "&OK"
+msgstr "&OK"
+
+#: clip.py:263
+msgid "&Paste"
+msgstr "&Joylashtirish"
+
+#: clip.py:439
+msgid "Clear All"
+msgstr "Hammasini tozalash"
+
+#: __init__.py:200
+msgid "Cleared all"
+msgstr "Hammasi tozalandi"
+
+#: clip.py:433
+msgid "Cleared all non-pinned items"
+msgstr "Barcha mahkamlanmaganlar tozalandi"
+
+#: clip.py:243
+msgid "Clip History"
+msgstr "Klip tarixi"
+
+#: clip.py:452
+msgid "Delete"
+msgstr "O'chirish"
+
+#: clip.py:378
+msgid "Deleted"
+msgstr "O'chirildi"
+
+#: clip.py:200
+msgid "Display name (optional):"
+msgstr "Ko'rsatiladigan nom (ixtiyoriy):"
+
+#: clip.py:451
+msgid "Edit"
+msgstr "Tahrirlash"
+
+#: clip.py:388
+msgid "Edit Item"
+msgstr "Elementni tahrirlash"
+
+#: clip.py:392
+msgid "Item edited"
+msgstr "Element tahrirlandi"
+
+#: clip.py:449
+msgid "Move Down"
+msgstr "Pastga surish"
+
+#: clip.py:448
+msgid "Move Up"
+msgstr "Yuqoriga surish"
+
+#: clip.py:428
+msgid "Moved down"
+msgstr "Pastga surildi"
+
+#: clip.py:416
+msgid "Moved up"
+msgstr "Yuqoriga surildi"
+
+#: __init__.py:209
+msgid "Opens clip history (single) clears all (double)"
+msgstr "Tarixni ochish (bir marta), tozalash (ikki marta)"
+
+#: clip.py:358
+msgid "Paste"
+msgstr "Joylashtirish"
+
+#: clip.py:370
+msgid "Pasted"
+msgstr "Joylashtirildi"
+
+#: clip.py:445
+msgid "Pin"
+msgstr "Mahkamlash"
+
+#: clip.py:404
+msgid "Pinned"
+msgstr "Mahkamlandi"
+
+#: clip.py:259
+msgid "Text"
+msgstr "Matn"
+
+#: clip.py:205
+msgid "Text content:"
+msgstr "Matn tarkibi:"
+
+#: clip.py:445
+msgid "Unpin"
+msgstr "Bo'shatish"
+
+#: clip.py:404
+msgid "Unpinned"
+msgstr "Bo'shatildi"

@@ -1,0 +1,121 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ClipHistory 2026.5.1\n"
+"Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
+"POT-Creation-Date: 2026-05-08 10:54+0700\n"
+"PO-Revision-Date: 2026-05-08 10:54+0700\n"
+"Last-Translator: chaiBot and Malee Yamazaki\n"
+"Language-Team: Lao\n"
+"Language: lo\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: DevOn Addon\n"
+
+#: clip.py:215
+msgid "&Cancel"
+msgstr "&ຍົກເລີກ"
+
+#: clip.py:265
+msgid "&Close"
+msgstr "&ປິດ"
+
+#: clip.py:214
+msgid "&OK"
+msgstr "&ຕົກລົງ"
+
+#: clip.py:263
+msgid "&Paste"
+msgstr "&ວາງ"
+
+#: clip.py:439
+msgid "Clear All"
+msgstr "ລຶບທັງໝົດ"
+
+#: __init__.py:200
+msgid "Cleared all"
+msgstr "ລຶບທັງໝົດແລ້ວ"
+
+#: clip.py:433
+msgid "Cleared all non-pinned items"
+msgstr "ລຶບລາຍການທີ່ບໍ່ໄດ້ປັກໝຸດທັງໝົດແລ້ວ"
+
+#: clip.py:243
+msgid "Clip History"
+msgstr "ປະຫວັດການສຳເນົາ"
+
+#: clip.py:452
+msgid "Delete"
+msgstr "ລຶບ"
+
+#: clip.py:378
+msgid "Deleted"
+msgstr "ລຶບແລ້ວ"
+
+#: clip.py:200
+msgid "Display name (optional):"
+msgstr "ຊື່ທີ່ສະແດງ (ເລືອກໄດ້):"
+
+#: clip.py:451
+msgid "Edit"
+msgstr "ແກ້ໄຂ"
+
+#: clip.py:388
+msgid "Edit Item"
+msgstr "ແກ້ໄຂລາຍການ"
+
+#: clip.py:392
+msgid "Item edited"
+msgstr "ແກ້ໄຂລາຍການແລ້ວ"
+
+#: clip.py:449
+msgid "Move Down"
+msgstr "ຍ້າຍລົງ"
+
+#: clip.py:448
+msgid "Move Up"
+msgstr "ຍ້າຍຂຶ້ນ"
+
+#: clip.py:428
+msgid "Moved down"
+msgstr "ຍ້າຍລົງແລ້ວ"
+
+#: clip.py:416
+msgid "Moved up"
+msgstr "ຍ້າຍຂຶ້ນແລ້ວ"
+
+#: __init__.py:209
+msgid "Opens clip history (single) clears all (double)"
+msgstr "ເປີດປະຫວັດ (ກົດເທື່ອດຽວ) ລຶບທັງໝົດ (ກົດສອງເທື່ອ)"
+
+#: clip.py:358
+msgid "Paste"
+msgstr "ວາງ"
+
+#: clip.py:370
+msgid "Pasted"
+msgstr "ວາງແລ້ວ"
+
+#: clip.py:445
+msgid "Pin"
+msgstr "ປັກໝຸດ"
+
+#: clip.py:404
+msgid "Pinned"
+msgstr "ປັກໝຸດແລ້ວ"
+
+#: clip.py:259
+msgid "Text"
+msgstr "ຂໍ້ຄວາມ"
+
+#: clip.py:205
+msgid "Text content:"
+msgstr "ເນື້ອໃນຂໍ້ຄວາມ:"
+
+#: clip.py:445
+msgid "Unpin"
+msgstr "ຖອນໝຸດ"
+
+#: clip.py:404
+msgid "Unpinned"
+msgstr "ຖອນໝຸດແລ້ວ"

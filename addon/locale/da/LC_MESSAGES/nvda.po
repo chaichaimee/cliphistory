@@ -1,0 +1,121 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ClipHistory 2026.5.1\n"
+"Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
+"POT-Creation-Date: 2026-05-08 10:54+0700\n"
+"PO-Revision-Date: 2026-05-08 10:54+0700\n"
+"Last-Translator: chaiBot and Malee Yamazaki\n"
+"Language-Team: Danish\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: DevOn Addon\n"
+
+#: clip.py:215
+msgid "&Cancel"
+msgstr "&Annuller"
+
+#: clip.py:265
+msgid "&Close"
+msgstr "&Luk"
+
+#: clip.py:214
+msgid "&OK"
+msgstr "&OK"
+
+#: clip.py:263
+msgid "&Paste"
+msgstr "&Sæt ind"
+
+#: clip.py:439
+msgid "Clear All"
+msgstr "Ryd alle"
+
+#: __init__.py:200
+msgid "Cleared all"
+msgstr "Rydde alle"
+
+#: clip.py:433
+msgid "Cleared all non-pinned items"
+msgstr "Rydde alle ikke-fastgjorte elementer"
+
+#: clip.py:243
+msgid "Clip History"
+msgstr "Klippebordshistorik"
+
+#: clip.py:452
+msgid "Delete"
+msgstr "Slet"
+
+#: clip.py:378
+msgid "Deleted"
+msgstr "Slettet"
+
+#: clip.py:200
+msgid "Display name (optional):"
+msgstr "Visningsnavn (valgfrit):"
+
+#: clip.py:451
+msgid "Edit"
+msgstr "Rediger"
+
+#: clip.py:388
+msgid "Edit Item"
+msgstr "Rediger element"
+
+#: clip.py:392
+msgid "Item edited"
+msgstr "Element redigeret"
+
+#: clip.py:449
+msgid "Move Down"
+msgstr "Flyt ned"
+
+#: clip.py:448
+msgid "Move Up"
+msgstr "Flyt op"
+
+#: clip.py:428
+msgid "Moved down"
+msgstr "Flyttet ned"
+
+#: clip.py:416
+msgid "Moved up"
+msgstr "Flyttet op"
+
+#: __init__.py:209
+msgid "Opens clip history (single) clears all (double)"
+msgstr "Åbner historik (enkelt tryk) rydder alt (dobbelt tryk)"
+
+#: clip.py:358
+msgid "Paste"
+msgstr "Sæt ind"
+
+#: clip.py:370
+msgid "Pasted"
+msgstr "Indsat"
+
+#: clip.py:445
+msgid "Pin"
+msgstr "Fastgør"
+
+#: clip.py:404
+msgid "Pinned"
+msgstr "Fastgjort"
+
+#: clip.py:259
+msgid "Text"
+msgstr "Tekst"
+
+#: clip.py:205
+msgid "Text content:"
+msgstr "Tekstindhold:"
+
+#: clip.py:445
+msgid "Unpin"
+msgstr "Frigør"
+
+#: clip.py:404
+msgid "Unpinned"
+msgstr "Frigjort"
