@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: ClipHistory 2026.5.1\n"
+"Project-Id-Version: ClipHistory 2026.7.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-05-08 10:54+0700\n"
-"PO-Revision-Date: 2026-05-08 10:54+0700\n"
+"POT-Creation-Date: 2026-07-01 08:19+0700\n"
+"PO-Revision-Date: 2026-07-01 08:40+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Chinese (Traditional)\n"
 "Language: zh_TW\n"
@@ -32,13 +32,13 @@ msgstr "貼上(&P)"
 msgid "Clear All"
 msgstr "全部清除"
 
-#: __init__.py:200
-msgid "Cleared all"
-msgstr "已全部清除"
-
 #: clip.py:433
 msgid "Cleared all non-pinned items"
-msgstr "已清除所有未釘選項目"
+msgstr "已清除所有未固定的項目"
+
+#: __init__.py:205
+msgid "Cleared {count} items"
+msgstr "已清除 {count} 個項目"
 
 #: clip.py:243
 msgid "Clip History"
@@ -54,7 +54,7 @@ msgstr "已刪除"
 
 #: clip.py:200
 msgid "Display name (optional):"
-msgstr "顯示名稱 (選填):"
+msgstr "顯示名稱（選填）："
 
 #: clip.py:451
 msgid "Edit"
@@ -66,7 +66,7 @@ msgstr "編輯項目"
 
 #: clip.py:392
 msgid "Item edited"
-msgstr "項目已編輯"
+msgstr "已編輯項目"
 
 #: clip.py:449
 msgid "Move Down"
@@ -84,9 +84,13 @@ msgstr "已下移"
 msgid "Moved up"
 msgstr "已上移"
 
-#: __init__.py:209
+#: __init__.py:203
+msgid "No items to clear"
+msgstr "沒有可清除的項目"
+
+#: __init__.py:214
 msgid "Opens clip history (single) clears all (double)"
-msgstr "開啟歷史 (按一次)，清除全部 (按兩次)"
+msgstr "開啟剪貼簿歷史（單擊）清除全部（雙擊）"
 
 #: clip.py:358
 msgid "Paste"
@@ -98,11 +102,11 @@ msgstr "已貼上"
 
 #: clip.py:445
 msgid "Pin"
-msgstr "釘選"
+msgstr "固定"
 
 #: clip.py:404
 msgid "Pinned"
-msgstr "已釘選"
+msgstr "已固定"
 
 #: clip.py:259
 msgid "Text"
@@ -110,12 +114,12 @@ msgstr "文字"
 
 #: clip.py:205
 msgid "Text content:"
-msgstr "文字內容:"
+msgstr "文字內容："
 
 #: clip.py:445
 msgid "Unpin"
-msgstr "取消釘選"
+msgstr "取消固定"
 
 #: clip.py:404
 msgid "Unpinned"
-msgstr "已取消釘選"
+msgstr "已取消固定"

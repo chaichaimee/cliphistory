@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: ClipHistory 2026.5.1\n"
+"Project-Id-Version: ClipHistory 2026.7.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-05-08 10:54+0700\n"
-"PO-Revision-Date: 2026-05-08 10:54+0700\n"
+"POT-Creation-Date: 2026-07-01 08:19+0700\n"
+"PO-Revision-Date: 2026-07-01 08:24+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Arabic\n"
 "Language: ar\n"
@@ -14,11 +14,11 @@ msgstr ""
 
 #: clip.py:215
 msgid "&Cancel"
-msgstr "إ&لغاء"
+msgstr "&إلغاء"
 
 #: clip.py:265
 msgid "&Close"
-msgstr "إ&غلاق"
+msgstr "&إغلاق"
 
 #: clip.py:214
 msgid "&OK"
@@ -32,13 +32,13 @@ msgstr "&لصق"
 msgid "Clear All"
 msgstr "مسح الكل"
 
-#: __init__.py:200
-msgid "Cleared all"
-msgstr "تم مسح الكل"
-
 #: clip.py:433
 msgid "Cleared all non-pinned items"
 msgstr "تم مسح جميع العناصر غير المثبتة"
+
+#: __init__.py:205
+msgid "Cleared {count} items"
+msgstr "تم مسح {count} عنصر"
 
 #: clip.py:243
 msgid "Clip History"
@@ -58,35 +58,39 @@ msgstr "اسم العرض (اختياري):"
 
 #: clip.py:451
 msgid "Edit"
-msgstr "تعديل"
+msgstr "تحرير"
 
 #: clip.py:388
 msgid "Edit Item"
-msgstr "تعديل العنصر"
+msgstr "تحرير العنصر"
 
 #: clip.py:392
 msgid "Item edited"
-msgstr "تم تعديل العنصر"
+msgstr "تم تحرير العنصر"
 
 #: clip.py:449
 msgid "Move Down"
-msgstr "نقل لأسفل"
+msgstr "تحريك لأسفل"
 
 #: clip.py:448
 msgid "Move Up"
-msgstr "نقل لأعلى"
+msgstr "تحريك لأعلى"
 
 #: clip.py:428
 msgid "Moved down"
-msgstr "تم النقل لأسفل"
+msgstr "تم التحريك لأسفل"
 
 #: clip.py:416
 msgid "Moved up"
-msgstr "تم النقل لأعلى"
+msgstr "تم التحريك لأعلى"
 
-#: __init__.py:209
+#: __init__.py:203
+msgid "No items to clear"
+msgstr "لا توجد عناصر لمسحها"
+
+#: __init__.py:214
 msgid "Opens clip history (single) clears all (double)"
-msgstr "يفتح سجل الحافظة (ضغطة واحدة) يمسح الكل (ضغطتان)"
+msgstr "فتح سجل الحافظة (نقرة واحدة) مسح الكل (نقرة مزدوجة)"
 
 #: clip.py:358
 msgid "Paste"

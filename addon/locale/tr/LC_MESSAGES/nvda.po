@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: ClipHistory 2026.5.1\n"
+"Project-Id-Version: ClipHistory 2026.7.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-05-08 10:54+0700\n"
-"PO-Revision-Date: 2026-05-08 10:54+0700\n"
+"POT-Creation-Date: 2026-07-01 08:19+0700\n"
+"PO-Revision-Date: 2026-07-01 08:40+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Turkish\n"
 "Language: tr\n"
@@ -14,7 +14,7 @@ msgstr ""
 
 #: clip.py:215
 msgid "&Cancel"
-msgstr "İ&ptal"
+msgstr "&İptal"
 
 #: clip.py:265
 msgid "&Close"
@@ -32,13 +32,13 @@ msgstr "&Yapıştır"
 msgid "Clear All"
 msgstr "Tümünü Temizle"
 
-#: __init__.py:200
-msgid "Cleared all"
-msgstr "Tümü temizlendi"
-
 #: clip.py:433
 msgid "Cleared all non-pinned items"
 msgstr "Sabitlenmemiş tüm öğeler temizlendi"
+
+#: __init__.py:205
+msgid "Cleared {count} items"
+msgstr "{count} öğe temizlendi"
 
 #: clip.py:243
 msgid "Clip History"
@@ -84,9 +84,13 @@ msgstr "Aşağı taşındı"
 msgid "Moved up"
 msgstr "Yukarı taşındı"
 
-#: __init__.py:209
+#: __init__.py:203
+msgid "No items to clear"
+msgstr "Temizlenecek öğe yok"
+
+#: __init__.py:214
 msgid "Opens clip history (single) clears all (double)"
-msgstr "Geçmişi aç (tek basış), tümünü temizle (çift basış)"
+msgstr "Pano geçmişini aç (tek) tümünü temizle (çift)"
 
 #: clip.py:358
 msgid "Paste"

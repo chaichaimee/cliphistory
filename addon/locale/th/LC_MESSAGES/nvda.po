@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: ClipHistory 2026.5.1\n"
+"Project-Id-Version: ClipHistory 2026.7.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-05-08 10:54+0700\n"
-"PO-Revision-Date: 2026-05-08 10:54+0700\n"
+"POT-Creation-Date: 2026-07-01 08:19+0700\n"
+"PO-Revision-Date: 2026-07-01 08:40+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Thai\n"
 "Language: th\n"
@@ -32,17 +32,17 @@ msgstr "&วาง"
 msgid "Clear All"
 msgstr "ล้างทั้งหมด"
 
-#: __init__.py:200
-msgid "Cleared all"
-msgstr "ล้างข้อมูลทั้งหมดแล้ว"
-
 #: clip.py:433
 msgid "Cleared all non-pinned items"
 msgstr "ล้างรายการที่ไม่ได้ปักหมุดทั้งหมดแล้ว"
 
+#: __init__.py:205
+msgid "Cleared {count} items"
+msgstr "ล้างรายการ {count} รายการแล้ว"
+
 #: clip.py:243
 msgid "Clip History"
-msgstr "ประวัติการคลิป"
+msgstr "ประวัติคลิปบอร์ด"
 
 #: clip.py:452
 msgid "Delete"
@@ -54,7 +54,7 @@ msgstr "ลบแล้ว"
 
 #: clip.py:200
 msgid "Display name (optional):"
-msgstr "ชื่อที่แสดง (ไม่บังคับ):"
+msgstr "ชื่อที่แสดง (เลือกได้):"
 
 #: clip.py:451
 msgid "Edit"
@@ -70,23 +70,27 @@ msgstr "แก้ไขรายการแล้ว"
 
 #: clip.py:449
 msgid "Move Down"
-msgstr "เลื่อนลง"
+msgstr "ย้ายลง"
 
 #: clip.py:448
 msgid "Move Up"
-msgstr "เลื่อนขึ้น"
+msgstr "ย้ายขึ้น"
 
 #: clip.py:428
 msgid "Moved down"
-msgstr "เลื่อนลงแล้ว"
+msgstr "ย้ายลงแล้ว"
 
 #: clip.py:416
 msgid "Moved up"
-msgstr "เลื่อนขึ้นแล้ว"
+msgstr "ย้ายขึ้นแล้ว"
 
-#: __init__.py:209
+#: __init__.py:203
+msgid "No items to clear"
+msgstr "ไม่มีรายการให้ล้าง"
+
+#: __init__.py:214
 msgid "Opens clip history (single) clears all (double)"
-msgstr "เปิดประวัติ (กดครั้งเดียว) ล้างทั้งหมด (กดสองครั้ง)"
+msgstr "เปิดประวัติคลิป (คลิกเดียว) ล้างทั้งหมด (ดับเบิลคลิก)"
 
 #: clip.py:358
 msgid "Paste"
@@ -114,8 +118,8 @@ msgstr "เนื้อหาข้อความ:"
 
 #: clip.py:445
 msgid "Unpin"
-msgstr "ถอนหมุด"
+msgstr "เลิกปักหมุด"
 
 #: clip.py:404
 msgid "Unpinned"
-msgstr "ถอนหมุดแล้ว"
+msgstr "เลิกปักหมุดแล้ว"

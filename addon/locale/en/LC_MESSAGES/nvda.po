@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: ClipHistory 2026.5.1\n"
+"Project-Id-Version: ClipHistory 2026.7.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-05-08 10:54+0700\n"
+"POT-Creation-Date: 2026-07-01 08:19+0700\n"
 "PO-Revision-Date: \n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: English\n"
@@ -32,13 +32,13 @@ msgstr "&Paste"
 msgid "Clear All"
 msgstr "Clear All"
 
-#: __init__.py:200
-msgid "Cleared all"
-msgstr "Cleared all"
-
 #: clip.py:433
 msgid "Cleared all non-pinned items"
 msgstr "Cleared all non-pinned items"
+
+#: __init__.py:205
+msgid "Cleared {count} items"
+msgstr "Cleared {count} items"
 
 #: clip.py:243
 msgid "Clip History"
@@ -84,7 +84,11 @@ msgstr "Moved down"
 msgid "Moved up"
 msgstr "Moved up"
 
-#: __init__.py:209
+#: __init__.py:203
+msgid "No items to clear"
+msgstr "No items to clear"
+
+#: __init__.py:214
 msgid "Opens clip history (single) clears all (double)"
 msgstr "Opens clip history (single) clears all (double)"
 

@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: ClipHistory 2026.5.1\n"
+"Project-Id-Version: ClipHistory 2026.7.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-05-08 10:54+0700\n"
-"PO-Revision-Date: 2026-05-08 10:54+0700\n"
+"POT-Creation-Date: 2026-07-01 08:19+0700\n"
+"PO-Revision-Date: 2026-07-01 08:40+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Ukrainian\n"
 "Language: uk\n"
@@ -22,23 +22,23 @@ msgstr "&Закрити"
 
 #: clip.py:214
 msgid "&OK"
-msgstr "&Гаразд"
+msgstr "&ОК"
 
 #: clip.py:263
 msgid "&Paste"
-msgstr "Вс&тавити"
+msgstr "&Вставити"
 
 #: clip.py:439
 msgid "Clear All"
 msgstr "Очистити все"
 
-#: __init__.py:200
-msgid "Cleared all"
-msgstr "Все очищено"
-
 #: clip.py:433
 msgid "Cleared all non-pinned items"
-msgstr "Усі незакріплені елементи очищено"
+msgstr "Очищено всі незакріплені елементи"
+
+#: __init__.py:205
+msgid "Cleared {count} items"
+msgstr "Очищено {count} елементів"
 
 #: clip.py:243
 msgid "Clip History"
@@ -54,7 +54,7 @@ msgstr "Видалено"
 
 #: clip.py:200
 msgid "Display name (optional):"
-msgstr "Назва для відображення (необов'язково):"
+msgstr "Відображуване ім'я (необов'язково):"
 
 #: clip.py:451
 msgid "Edit"
@@ -84,9 +84,13 @@ msgstr "Переміщено вниз"
 msgid "Moved up"
 msgstr "Переміщено вгору"
 
-#: __init__.py:209
+#: __init__.py:203
+msgid "No items to clear"
+msgstr "Немає елементів для очищення"
+
+#: __init__.py:214
 msgid "Opens clip history (single) clears all (double)"
-msgstr "Відкрити історію (один раз), очистити все (двічі)"
+msgstr "Відкрити історію (одинарний) очистити все (подвійний)"
 
 #: clip.py:358
 msgid "Paste"

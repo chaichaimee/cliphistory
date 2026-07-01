@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: ClipHistory 2026.5.1\n"
+"Project-Id-Version: ClipHistory 2026.7.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-05-08 10:54+0700\n"
-"PO-Revision-Date: 2026-05-08 10:54+0700\n"
+"POT-Creation-Date: 2026-07-01 08:19+0700\n"
+"PO-Revision-Date: 2026-07-01 08:24+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Finnish\n"
 "Language: fi\n"
@@ -32,13 +32,13 @@ msgstr "&Liitä"
 msgid "Clear All"
 msgstr "Tyhjennä kaikki"
 
-#: __init__.py:200
-msgid "Cleared all"
-msgstr "Kaikki tyhjennetty"
-
 #: clip.py:433
 msgid "Cleared all non-pinned items"
-msgstr "Kaikki kiinnittämättömät kohteet tyhjennetty"
+msgstr "Kaikki ei-kiinnitetyt kohteet tyhjennetty"
+
+#: __init__.py:205
+msgid "Cleared {count} items"
+msgstr "{count} kohdetta tyhjennetty"
 
 #: clip.py:243
 msgid "Clip History"
@@ -66,7 +66,7 @@ msgstr "Muokkaa kohdetta"
 
 #: clip.py:392
 msgid "Item edited"
-msgstr "Kohdetta muokattu"
+msgstr "Kohde muokattu"
 
 #: clip.py:449
 msgid "Move Down"
@@ -84,9 +84,13 @@ msgstr "Siirretty alas"
 msgid "Moved up"
 msgstr "Siirretty ylös"
 
-#: __init__.py:209
+#: __init__.py:203
+msgid "No items to clear"
+msgstr "Ei tyhjennettäviä kohteita"
+
+#: __init__.py:214
 msgid "Opens clip history (single) clears all (double)"
-msgstr "Avaa historia (yksi painallus), tyhjennä (kaksi painallusta)"
+msgstr "Avaa leikepöydän historian (yksi) tyhjentää kaiken (kaksi)"
 
 #: clip.py:358
 msgid "Paste"
@@ -114,8 +118,8 @@ msgstr "Tekstisisältö:"
 
 #: clip.py:445
 msgid "Unpin"
-msgstr "Poista kiinnitys"
+msgstr "Irrota"
 
 #: clip.py:404
 msgid "Unpinned"
-msgstr "Kiinnitys poistettu"
+msgstr "Irrotettu"

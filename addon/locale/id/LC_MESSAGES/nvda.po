@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: ClipHistory 2026.5.1\n"
+"Project-Id-Version: ClipHistory 2026.7.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-05-08 10:54+0700\n"
-"PO-Revision-Date: 2026-05-08 10:54+0700\n"
+"POT-Creation-Date: 2026-07-01 08:19+0700\n"
+"PO-Revision-Date: 2026-07-01 08:30+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Indonesian\n"
 "Language: id\n"
@@ -22,7 +22,7 @@ msgstr "&Tutup"
 
 #: clip.py:214
 msgid "&OK"
-msgstr "&Oke"
+msgstr "&OK"
 
 #: clip.py:263
 msgid "&Paste"
@@ -30,15 +30,15 @@ msgstr "&Tempel"
 
 #: clip.py:439
 msgid "Clear All"
-msgstr "Hapus Semua"
-
-#: __init__.py:200
-msgid "Cleared all"
-msgstr "Semua dihapus"
+msgstr "Bersihkan Semua"
 
 #: clip.py:433
 msgid "Cleared all non-pinned items"
-msgstr "Semua item yang tidak dipasangi pin dihapus"
+msgstr "Semua item yang tidak disematkan telah dibersihkan"
+
+#: __init__.py:205
+msgid "Cleared {count} items"
+msgstr "{count} item telah dibersihkan"
 
 #: clip.py:243
 msgid "Clip History"
@@ -70,11 +70,11 @@ msgstr "Item diedit"
 
 #: clip.py:449
 msgid "Move Down"
-msgstr "Pindahkan ke Bawah"
+msgstr "Pindah ke Bawah"
 
 #: clip.py:448
 msgid "Move Up"
-msgstr "Pindahkan ke Atas"
+msgstr "Pindah ke Atas"
 
 #: clip.py:428
 msgid "Moved down"
@@ -84,9 +84,13 @@ msgstr "Dipindahkan ke bawah"
 msgid "Moved up"
 msgstr "Dipindahkan ke atas"
 
-#: __init__.py:209
+#: __init__.py:203
+msgid "No items to clear"
+msgstr "Tidak ada item untuk dibersihkan"
+
+#: __init__.py:214
 msgid "Opens clip history (single) clears all (double)"
-msgstr "Buka riwayat (sekali tekan), hapus semua (dua kali tekan)"
+msgstr "Buka riwayat klip (klik tunggal) bersihkan semua (klik ganda)"
 
 #: clip.py:358
 msgid "Paste"
@@ -110,7 +114,7 @@ msgstr "Teks"
 
 #: clip.py:205
 msgid "Text content:"
-msgstr "Konten teks:"
+msgstr "Isi teks:"
 
 #: clip.py:445
 msgid "Unpin"

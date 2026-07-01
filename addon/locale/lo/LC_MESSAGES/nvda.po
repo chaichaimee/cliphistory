@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: ClipHistory 2026.5.1\n"
+"Project-Id-Version: ClipHistory 2026.7.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-05-08 10:54+0700\n"
-"PO-Revision-Date: 2026-05-08 10:54+0700\n"
+"POT-Creation-Date: 2026-07-01 08:19+0700\n"
+"PO-Revision-Date: 2026-07-01 08:31+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Lao\n"
 "Language: lo\n"
@@ -32,17 +32,17 @@ msgstr "&ວາງ"
 msgid "Clear All"
 msgstr "ລຶບທັງໝົດ"
 
-#: __init__.py:200
-msgid "Cleared all"
-msgstr "ລຶບທັງໝົດແລ້ວ"
-
 #: clip.py:433
 msgid "Cleared all non-pinned items"
 msgstr "ລຶບລາຍການທີ່ບໍ່ໄດ້ປັກໝຸດທັງໝົດແລ້ວ"
 
+#: __init__.py:205
+msgid "Cleared {count} items"
+msgstr "ລຶບ {count} ລາຍການແລ້ວ"
+
 #: clip.py:243
 msgid "Clip History"
-msgstr "ປະຫວັດການສຳເນົາ"
+msgstr "ປະຫວັດຄລິບ"
 
 #: clip.py:452
 msgid "Delete"
@@ -54,7 +54,7 @@ msgstr "ລຶບແລ້ວ"
 
 #: clip.py:200
 msgid "Display name (optional):"
-msgstr "ຊື່ທີ່ສະແດງ (ເລືອກໄດ້):"
+msgstr "ຊື່ສະແດງ (ທາງເລືອກ):"
 
 #: clip.py:451
 msgid "Edit"
@@ -84,9 +84,13 @@ msgstr "ຍ້າຍລົງແລ້ວ"
 msgid "Moved up"
 msgstr "ຍ້າຍຂຶ້ນແລ້ວ"
 
-#: __init__.py:209
+#: __init__.py:203
+msgid "No items to clear"
+msgstr "ບໍ່ມີລາຍການໃຫ້ລຶບ"
+
+#: __init__.py:214
 msgid "Opens clip history (single) clears all (double)"
-msgstr "ເປີດປະຫວັດ (ກົດເທື່ອດຽວ) ລຶບທັງໝົດ (ກົດສອງເທື່ອ)"
+msgstr "ເປີດປະຫວັດຄລິບ (ຄລິກດຽວ) ລຶບທັງໝົດ (ຄລິກຄູ່)"
 
 #: clip.py:358
 msgid "Paste"
@@ -110,12 +114,12 @@ msgstr "ຂໍ້ຄວາມ"
 
 #: clip.py:205
 msgid "Text content:"
-msgstr "ເນື້ອໃນຂໍ້ຄວາມ:"
+msgstr "ເນື້ອຫາຂໍ້ຄວາມ:"
 
 #: clip.py:445
 msgid "Unpin"
-msgstr "ຖອນໝຸດ"
+msgstr "ເລີກປັກໝຸດ"
 
 #: clip.py:404
 msgid "Unpinned"
-msgstr "ຖອນໝຸດແລ້ວ"
+msgstr "ເລີກປັກໝຸດແລ້ວ"

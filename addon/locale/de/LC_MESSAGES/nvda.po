@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: ClipHistory 2026.5.1\n"
+"Project-Id-Version: ClipHistory 2026.7.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-05-08 10:54+0700\n"
-"PO-Revision-Date: 2026-05-08 10:54+0700\n"
+"POT-Creation-Date: 2026-07-01 08:19+0700\n"
+"PO-Revision-Date: 2026-07-01 08:24+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: German\n"
 "Language: de\n"
@@ -30,19 +30,19 @@ msgstr "&Einfügen"
 
 #: clip.py:439
 msgid "Clear All"
-msgstr "Alles löschen"
-
-#: __init__.py:200
-msgid "Cleared all"
-msgstr "Alles gelöscht"
+msgstr "Alle löschen"
 
 #: clip.py:433
 msgid "Cleared all non-pinned items"
-msgstr "Alle nicht angehefteten Elemente gelöscht"
+msgstr "Alle nicht fixierten Elemente gelöscht"
+
+#: __init__.py:205
+msgid "Cleared {count} items"
+msgstr "{count} Elemente gelöscht"
 
 #: clip.py:243
 msgid "Clip History"
-msgstr "Zwischenablage-Verlauf"
+msgstr "Zwischenablageverlauf"
 
 #: clip.py:452
 msgid "Delete"
@@ -62,11 +62,11 @@ msgstr "Bearbeiten"
 
 #: clip.py:388
 msgid "Edit Item"
-msgstr "Eintrag bearbeiten"
+msgstr "Element bearbeiten"
 
 #: clip.py:392
 msgid "Item edited"
-msgstr "Eintrag bearbeitet"
+msgstr "Element bearbeitet"
 
 #: clip.py:449
 msgid "Move Down"
@@ -84,9 +84,13 @@ msgstr "Nach unten verschoben"
 msgid "Moved up"
 msgstr "Nach oben verschoben"
 
-#: __init__.py:209
+#: __init__.py:203
+msgid "No items to clear"
+msgstr "Keine Elemente zum Löschen"
+
+#: __init__.py:214
 msgid "Opens clip history (single) clears all (double)"
-msgstr "Verlauf öffnen (einmal drücken), alles löschen (zweimal)"
+msgstr "Öffnet den Zwischenablageverlauf (einfach) löscht alles (doppelt)"
 
 #: clip.py:358
 msgid "Paste"
@@ -98,11 +102,11 @@ msgstr "Eingefügt"
 
 #: clip.py:445
 msgid "Pin"
-msgstr "Anheften"
+msgstr "Fixieren"
 
 #: clip.py:404
 msgid "Pinned"
-msgstr "Angeheftet"
+msgstr "Fixiert"
 
 #: clip.py:259
 msgid "Text"
@@ -114,8 +118,8 @@ msgstr "Textinhalt:"
 
 #: clip.py:445
 msgid "Unpin"
-msgstr "Anheften aufheben"
+msgstr "Fixierung aufheben"
 
 #: clip.py:404
 msgid "Unpinned"
-msgstr "Anheften aufgehoben"
+msgstr "Fixierung aufgehoben"

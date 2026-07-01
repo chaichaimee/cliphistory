@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: ClipHistory 2026.5.1\n"
+"Project-Id-Version: ClipHistory 2026.7.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-05-08 10:54+0700\n"
-"PO-Revision-Date: 2026-05-08 10:54+0700\n"
+"POT-Creation-Date: 2026-07-01 08:19+0700\n"
+"PO-Revision-Date: 2026-07-01 08:30+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Croatian\n"
 "Language: hr\n"
@@ -32,13 +32,13 @@ msgstr "&Zalijepi"
 msgid "Clear All"
 msgstr "Očisti sve"
 
-#: __init__.py:200
-msgid "Cleared all"
-msgstr "Sve je očišćeno"
-
 #: clip.py:433
 msgid "Cleared all non-pinned items"
-msgstr "Sve neprikvačene stavke su očišćene"
+msgstr "Očišćene sve neprikvačene stavke"
+
+#: __init__.py:205
+msgid "Cleared {count} items"
+msgstr "Očišćeno {count} stavki"
 
 #: clip.py:243
 msgid "Clip History"
@@ -46,15 +46,15 @@ msgstr "Povijest međuspremnika"
 
 #: clip.py:452
 msgid "Delete"
-msgstr "Obriši"
+msgstr "Izbriši"
 
 #: clip.py:378
 msgid "Deleted"
-msgstr "Obrisano"
+msgstr "Izbrisano"
 
 #: clip.py:200
 msgid "Display name (optional):"
-msgstr "Ime za prikaz (neobavezno):"
+msgstr "Prikazano ime (izborno):"
 
 #: clip.py:451
 msgid "Edit"
@@ -66,27 +66,31 @@ msgstr "Uredi stavku"
 
 #: clip.py:392
 msgid "Item edited"
-msgstr "Stavka je uređena"
+msgstr "Stavka uređena"
 
 #: clip.py:449
 msgid "Move Down"
-msgstr "Premjesti dolje"
+msgstr "Pomakni dolje"
 
 #: clip.py:448
 msgid "Move Up"
-msgstr "Premjesti gore"
+msgstr "Pomakni gore"
 
 #: clip.py:428
 msgid "Moved down"
-msgstr "Premješteno dolje"
+msgstr "Pomaknuto dolje"
 
 #: clip.py:416
 msgid "Moved up"
-msgstr "Premješteno gore"
+msgstr "Pomaknuto gore"
 
-#: __init__.py:209
+#: __init__.py:203
+msgid "No items to clear"
+msgstr "Nema stavki za brisanje"
+
+#: __init__.py:214
 msgid "Opens clip history (single) clears all (double)"
-msgstr "Otvara povijest (jedan pritisak), čisti sve (dva pritiska)"
+msgstr "Otvara povijest (jedan klik) čisti sve (dva klika)"
 
 #: clip.py:358
 msgid "Paste"
@@ -114,8 +118,8 @@ msgstr "Sadržaj teksta:"
 
 #: clip.py:445
 msgid "Unpin"
-msgstr "Otkvači"
+msgstr "Otkači"
 
 #: clip.py:404
 msgid "Unpinned"
-msgstr "Otkvačeno"
+msgstr "Otkačeno"

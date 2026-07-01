@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: ClipHistory 2026.5.1\n"
+"Project-Id-Version: ClipHistory 2026.7.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-05-08 10:54+0700\n"
-"PO-Revision-Date: 2026-05-08 10:54+0700\n"
+"POT-Creation-Date: 2026-07-01 08:19+0700\n"
+"PO-Revision-Date: 2026-07-01 08:24+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Persian\n"
 "Language: fa\n"
@@ -14,7 +14,7 @@ msgstr ""
 
 #: clip.py:215
 msgid "&Cancel"
-msgstr "ل&غو"
+msgstr "&لغو"
 
 #: clip.py:265
 msgid "&Close"
@@ -30,19 +30,19 @@ msgstr "&چسباندن"
 
 #: clip.py:439
 msgid "Clear All"
-msgstr "پاک‌سازی همه"
-
-#: __init__.py:200
-msgid "Cleared all"
-msgstr "همه پاک شدند"
+msgstr "پاک کردن همه"
 
 #: clip.py:433
 msgid "Cleared all non-pinned items"
-msgstr "تمام موارد سنجاق‌نشده پاک شدند"
+msgstr "همه موارد غیر سنجاق‌شده پاک شدند"
+
+#: __init__.py:205
+msgid "Cleared {count} items"
+msgstr "{count} مورد پاک شد"
 
 #: clip.py:243
 msgid "Clip History"
-msgstr "تاریخچه حافظه موقت"
+msgstr "تاریخچه کلیپ‌بورد"
 
 #: clip.py:452
 msgid "Delete"
@@ -84,9 +84,13 @@ msgstr "به پایین منتقل شد"
 msgid "Moved up"
 msgstr "به بالا منتقل شد"
 
-#: __init__.py:209
+#: __init__.py:203
+msgid "No items to clear"
+msgstr "موردی برای پاک کردن وجود ندارد"
+
+#: __init__.py:214
 msgid "Opens clip history (single) clears all (double)"
-msgstr "باز کردن تاریخچه (تک‌ضربه)، پاک‌سازی همه (دوضربه)"
+msgstr "باز کردن تاریخچه کلیپ‌بورد (تک کلیک) پاک کردن همه (دو کلیک)"
 
 #: clip.py:358
 msgid "Paste"
@@ -110,7 +114,7 @@ msgstr "متن"
 
 #: clip.py:205
 msgid "Text content:"
-msgstr "محتوای متنی:"
+msgstr "محتوای متن:"
 
 #: clip.py:445
 msgid "Unpin"

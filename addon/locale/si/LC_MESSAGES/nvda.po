@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: ClipHistory 2026.5.1\n"
+"Project-Id-Version: ClipHistory 2026.7.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-05-08 10:54+0700\n"
-"PO-Revision-Date: 2026-05-08 10:54+0700\n"
+"POT-Creation-Date: 2026-07-01 08:19+0700\n"
+"PO-Revision-Date: 2026-07-01 08:31+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Sinhala\n"
 "Language: si\n"
@@ -14,35 +14,35 @@ msgstr ""
 
 #: clip.py:215
 msgid "&Cancel"
-msgstr "අවලංගු කරන්න (&C)"
+msgstr "&අවලංගු කරන්න"
 
 #: clip.py:265
 msgid "&Close"
-msgstr "වසා දමන්න (&C)"
+msgstr "&වසා දමන්න"
 
 #: clip.py:214
 msgid "&OK"
-msgstr "හරි (&O)"
+msgstr "&හරි"
 
 #: clip.py:263
 msgid "&Paste"
-msgstr "අලවන්න (&P)"
+msgstr "&අලවන්න"
 
 #: clip.py:439
 msgid "Clear All"
-msgstr "සියල්ල මකන්න"
-
-#: __init__.py:200
-msgid "Cleared all"
-msgstr "සියල්ල මකා දමන ලදී"
+msgstr "සියල්ල ඉවත් කරන්න"
 
 #: clip.py:433
 msgid "Cleared all non-pinned items"
-msgstr "අමුණා නැති සියල්ල මකා දමන ලදී"
+msgstr "පින් නොකළ සියලුම අයිතම ඉවත් කරන ලදී"
+
+#: __init__.py:205
+msgid "Cleared {count} items"
+msgstr "අයිතම {count} ක් ඉවත් කරන ලදී"
 
 #: clip.py:243
 msgid "Clip History"
-msgstr "ක්ලිප්බෝඩ් ඉතිහාසය"
+msgstr "ක්ලිප් ඉතිහාසය"
 
 #: clip.py:452
 msgid "Delete"
@@ -54,7 +54,7 @@ msgstr "මකා දමන ලදී"
 
 #: clip.py:200
 msgid "Display name (optional):"
-msgstr "පෙන්විය යුතු නම (විකල්ප):"
+msgstr "දර්ශන නාමය (විකල්ප):"
 
 #: clip.py:451
 msgid "Edit"
@@ -62,7 +62,7 @@ msgstr "සංස්කරණය"
 
 #: clip.py:388
 msgid "Edit Item"
-msgstr "අයිතමය සංස්කරණය"
+msgstr "අයිතමය සංස්කරණය කරන්න"
 
 #: clip.py:392
 msgid "Item edited"
@@ -70,11 +70,11 @@ msgstr "අයිතමය සංස්කරණය කරන ලදී"
 
 #: clip.py:449
 msgid "Move Down"
-msgstr "පහළට ගෙනයන්න"
+msgstr "පහළට ගෙන යන්න"
 
 #: clip.py:448
 msgid "Move Up"
-msgstr "ඉහළට ගෙනයන්න"
+msgstr "ඉහළට ගෙන යන්න"
 
 #: clip.py:428
 msgid "Moved down"
@@ -84,9 +84,13 @@ msgstr "පහළට ගෙන යන ලදී"
 msgid "Moved up"
 msgstr "ඉහළට ගෙන යන ලදී"
 
-#: __init__.py:209
+#: __init__.py:203
+msgid "No items to clear"
+msgstr "ඉවත් කිරීමට අයිතම නොමැත"
+
+#: __init__.py:214
 msgid "Opens clip history (single) clears all (double)"
-msgstr "ඉතිහාසය විවෘත කරන්න (එක් වරක්), සියල්ල මකන්න (දෙවරක්)"
+msgstr "ක්ලිප් ඉතිහාසය විවෘත කරන්න (එක) සියල්ල ඉවත් කරන්න (දෙක)"
 
 #: clip.py:358
 msgid "Paste"
@@ -98,11 +102,11 @@ msgstr "අලවන ලදී"
 
 #: clip.py:445
 msgid "Pin"
-msgstr "අමුණන්න"
+msgstr "පින් කරන්න"
 
 #: clip.py:404
 msgid "Pinned"
-msgstr "අමුණන ලදී"
+msgstr "පින් කරන ලදී"
 
 #: clip.py:259
 msgid "Text"
@@ -114,8 +118,8 @@ msgstr "පෙළ අන්තර්ගතය:"
 
 #: clip.py:445
 msgid "Unpin"
-msgstr "ගලවන්න"
+msgstr "පින් ඉවත් කරන්න"
 
 #: clip.py:404
 msgid "Unpinned"
-msgstr "ගලවන ලදී"
+msgstr "පින් ඉවත් කරන ලදී"

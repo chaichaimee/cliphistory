@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: ClipHistory 2026.5.1\n"
+"Project-Id-Version: ClipHistory 2026.7.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-05-08 10:54+0700\n"
-"PO-Revision-Date: 2026-05-08 10:54+0700\n"
+"POT-Creation-Date: 2026-07-01 08:19+0700\n"
+"PO-Revision-Date: 2026-07-01 08:30+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Hebrew\n"
 "Language: he\n"
@@ -18,7 +18,7 @@ msgstr "&ביטול"
 
 #: clip.py:265
 msgid "&Close"
-msgstr "&סגור"
+msgstr "&סגירה"
 
 #: clip.py:214
 msgid "&OK"
@@ -26,19 +26,19 @@ msgstr "&אישור"
 
 #: clip.py:263
 msgid "&Paste"
-msgstr "ה&דבק"
+msgstr "&הדבקה"
 
 #: clip.py:439
 msgid "Clear All"
 msgstr "נקה הכל"
 
-#: __init__.py:200
-msgid "Cleared all"
-msgstr "הכל נוקה"
-
 #: clip.py:433
 msgid "Cleared all non-pinned items"
-msgstr "כל הפריטים הלא נעוצים נוקו"
+msgstr "כל הפריטים שלא הוצמדו נוקו"
+
+#: __init__.py:205
+msgid "Cleared {count} items"
+msgstr "{count} פריטים נוקו"
 
 #: clip.py:243
 msgid "Clip History"
@@ -46,7 +46,7 @@ msgstr "היסטוריית לוח"
 
 #: clip.py:452
 msgid "Delete"
-msgstr "מחק"
+msgstr "מחיקה"
 
 #: clip.py:378
 msgid "Deleted"
@@ -58,11 +58,11 @@ msgstr "שם תצוגה (אופציונלי):"
 
 #: clip.py:451
 msgid "Edit"
-msgstr "ערוך"
+msgstr "עריכה"
 
 #: clip.py:388
 msgid "Edit Item"
-msgstr "ערוך פריט"
+msgstr "עריכת פריט"
 
 #: clip.py:392
 msgid "Item edited"
@@ -70,27 +70,31 @@ msgstr "הפריט נערך"
 
 #: clip.py:449
 msgid "Move Down"
-msgstr "הזז למטה"
+msgstr "הזזה למטה"
 
 #: clip.py:448
 msgid "Move Up"
-msgstr "הזז למעלה"
+msgstr "הזזה למעלה"
 
 #: clip.py:428
 msgid "Moved down"
-msgstr "הועבר למטה"
+msgstr "הוזז למטה"
 
 #: clip.py:416
 msgid "Moved up"
-msgstr "הועבר למעלה"
+msgstr "הוזז למעלה"
 
-#: __init__.py:209
+#: __init__.py:203
+msgid "No items to clear"
+msgstr "אין פריטים לניקוי"
+
+#: __init__.py:214
 msgid "Opens clip history (single) clears all (double)"
-msgstr "פתיחת היסטוריה (לחיצה אחת), ניקוי הכל (לחיצה כפולה)"
+msgstr "פתיחת היסטוריית לוח (לחיצה בודדת) ניקוי הכל (לחיצה כפולה)"
 
 #: clip.py:358
 msgid "Paste"
-msgstr "הדבק"
+msgstr "הדבקה"
 
 #: clip.py:370
 msgid "Pasted"
@@ -98,11 +102,11 @@ msgstr "הודבק"
 
 #: clip.py:445
 msgid "Pin"
-msgstr "נעץ"
+msgstr "הצמדה"
 
 #: clip.py:404
 msgid "Pinned"
-msgstr "נעוץ"
+msgstr "הוצמד"
 
 #: clip.py:259
 msgid "Text"
@@ -114,8 +118,8 @@ msgstr "תוכן טקסט:"
 
 #: clip.py:445
 msgid "Unpin"
-msgstr "בטל נעיצה"
+msgstr "ביטול הצמדה"
 
 #: clip.py:404
 msgid "Unpinned"
-msgstr "נעיצה בוטלה"
+msgstr "ביטול הצמדה בוצע"

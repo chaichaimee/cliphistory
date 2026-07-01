@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: ClipHistory 2026.5.1\n"
+"Project-Id-Version: ClipHistory 2026.7.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-05-08 10:54+0700\n"
-"PO-Revision-Date: 2026-05-08 10:54+0700\n"
+"POT-Creation-Date: 2026-07-01 08:19+0700\n"
+"PO-Revision-Date: 2026-07-01 08:30+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Hungarian\n"
 "Language: hu\n"
@@ -32,13 +32,13 @@ msgstr "&Beillesztés"
 msgid "Clear All"
 msgstr "Összes törlése"
 
-#: __init__.py:200
-msgid "Cleared all"
-msgstr "Összes törölve"
-
 #: clip.py:433
 msgid "Cleared all non-pinned items"
-msgstr "Az összes nem rögzített elem törölve"
+msgstr "Minden nem rögzített elem törölve"
+
+#: __init__.py:205
+msgid "Cleared {count} items"
+msgstr "{count} elem törölve"
 
 #: clip.py:243
 msgid "Clip History"
@@ -70,23 +70,27 @@ msgstr "Elem szerkesztve"
 
 #: clip.py:449
 msgid "Move Down"
-msgstr "Mozgatás lefelé"
+msgstr "Mozgatás lejjebb"
 
 #: clip.py:448
 msgid "Move Up"
-msgstr "Mozgatás felfelé"
+msgstr "Mozgatás feljebb"
 
 #: clip.py:428
 msgid "Moved down"
-msgstr "Mozgatva lefelé"
+msgstr "Lejjebb mozgatva"
 
 #: clip.py:416
 msgid "Moved up"
-msgstr "Mozgatva felfelé"
+msgstr "Feljebb mozgatva"
 
-#: __init__.py:209
+#: __init__.py:203
+msgid "No items to clear"
+msgstr "Nincs törölhető elem"
+
+#: __init__.py:214
 msgid "Opens clip history (single) clears all (double)"
-msgstr "Előzmények megnyitása (egyszeri), összes törlése (dupla)"
+msgstr "Megnyitja az előzményeket (egyszeri) törli az összeset (dupla)"
 
 #: clip.py:358
 msgid "Paste"
@@ -110,7 +114,7 @@ msgstr "Szöveg"
 
 #: clip.py:205
 msgid "Text content:"
-msgstr "Szövegtartalom:"
+msgstr "Szöveg tartalma:"
 
 #: clip.py:445
 msgid "Unpin"

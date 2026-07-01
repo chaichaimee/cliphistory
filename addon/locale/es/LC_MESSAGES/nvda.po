@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: ClipHistory 2026.5.1\n"
+"Project-Id-Version: ClipHistory 2026.7.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-05-08 10:54+0700\n"
-"PO-Revision-Date: 2026-05-08 10:54+0700\n"
+"POT-Creation-Date: 2026-07-01 08:19+0700\n"
+"PO-Revision-Date: 2026-07-01 08:24+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Spanish\n"
 "Language: es\n"
@@ -32,13 +32,13 @@ msgstr "&Pegar"
 msgid "Clear All"
 msgstr "Borrar todo"
 
-#: __init__.py:200
-msgid "Cleared all"
-msgstr "Todo borrado"
-
 #: clip.py:433
 msgid "Cleared all non-pinned items"
-msgstr "Borrados todos los elementos no fijados"
+msgstr "Se borraron todos los elementos no fijados"
+
+#: __init__.py:205
+msgid "Cleared {count} items"
+msgstr "Se borraron {count} elementos"
 
 #: clip.py:243
 msgid "Clip History"
@@ -54,7 +54,7 @@ msgstr "Eliminado"
 
 #: clip.py:200
 msgid "Display name (optional):"
-msgstr "Nombre a mostrar (opcional):"
+msgstr "Nombre de visualización (opcional):"
 
 #: clip.py:451
 msgid "Edit"
@@ -70,23 +70,27 @@ msgstr "Elemento editado"
 
 #: clip.py:449
 msgid "Move Down"
-msgstr "Mover abajo"
+msgstr "Mover hacia abajo"
 
 #: clip.py:448
 msgid "Move Up"
-msgstr "Mover arriba"
+msgstr "Mover hacia arriba"
 
 #: clip.py:428
 msgid "Moved down"
-msgstr "Movido abajo"
+msgstr "Movido hacia abajo"
 
 #: clip.py:416
 msgid "Moved up"
-msgstr "Movido arriba"
+msgstr "Movido hacia arriba"
 
-#: __init__.py:209
+#: __init__.py:203
+msgid "No items to clear"
+msgstr "No hay elementos para borrar"
+
+#: __init__.py:214
 msgid "Opens clip history (single) clears all (double)"
-msgstr "Abre historial (una pulsación), borra todo (dos pulsaciones)"
+msgstr "Abre el historial del portapapeles (clic simple) borra todo (clic doble)"
 
 #: clip.py:358
 msgid "Paste"

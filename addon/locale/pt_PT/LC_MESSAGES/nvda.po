@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: ClipHistory 2026.5.1\n"
+"Project-Id-Version: ClipHistory 2026.7.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-05-08 10:54+0700\n"
-"PO-Revision-Date: 2026-05-08 10:54+0700\n"
+"POT-Creation-Date: 2026-07-01 08:19+0700\n"
+"PO-Revision-Date: 2026-07-01 08:31+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Portuguese (Portugal)\n"
 "Language: pt_PT\n"
@@ -26,19 +26,19 @@ msgstr "&OK"
 
 #: clip.py:263
 msgid "&Paste"
-msgstr "Co&lar"
+msgstr "&Colar"
 
 #: clip.py:439
 msgid "Clear All"
 msgstr "Limpar tudo"
 
-#: __init__.py:200
-msgid "Cleared all"
-msgstr "Tudo limpo"
-
 #: clip.py:433
 msgid "Cleared all non-pinned items"
-msgstr "Limpados todos os itens não fixados"
+msgstr "Limpos todos os itens não afixados"
+
+#: __init__.py:205
+msgid "Cleared {count} items"
+msgstr "{count} itens limpos"
 
 #: clip.py:243
 msgid "Clip History"
@@ -54,7 +54,7 @@ msgstr "Eliminado"
 
 #: clip.py:200
 msgid "Display name (optional):"
-msgstr "Nome de exibição (opcional):"
+msgstr "Nome a exibir (opcional):"
 
 #: clip.py:451
 msgid "Edit"
@@ -84,9 +84,13 @@ msgstr "Movido para baixo"
 msgid "Moved up"
 msgstr "Movido para cima"
 
-#: __init__.py:209
+#: __init__.py:203
+msgid "No items to clear"
+msgstr "Sem itens para limpar"
+
+#: __init__.py:214
 msgid "Opens clip history (single) clears all (double)"
-msgstr "Abre histórico (um toque), limpa tudo (dois toques)"
+msgstr "Abre o histórico (clique simples) limpa tudo (clique duplo)"
 
 #: clip.py:358
 msgid "Paste"
@@ -98,11 +102,11 @@ msgstr "Colado"
 
 #: clip.py:445
 msgid "Pin"
-msgstr "Fixar"
+msgstr "Afixar"
 
 #: clip.py:404
 msgid "Pinned"
-msgstr "Fixado"
+msgstr "Afixado"
 
 #: clip.py:259
 msgid "Text"

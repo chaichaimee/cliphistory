@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: ClipHistory 2026.5.1\n"
+"Project-Id-Version: ClipHistory 2026.7.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-05-08 10:54+0700\n"
-"PO-Revision-Date: 2026-05-08 10:54+0700\n"
+"POT-Creation-Date: 2026-07-01 08:19+0700\n"
+"PO-Revision-Date: 2026-07-01 08:31+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Russian\n"
 "Language: ru\n"
@@ -14,7 +14,7 @@ msgstr ""
 
 #: clip.py:215
 msgid "&Cancel"
-msgstr "О&тмена"
+msgstr "&Отмена"
 
 #: clip.py:265
 msgid "&Close"
@@ -22,23 +22,23 @@ msgstr "&Закрыть"
 
 #: clip.py:214
 msgid "&OK"
-msgstr "&OK"
+msgstr "&ОК"
 
 #: clip.py:263
 msgid "&Paste"
-msgstr "Вс&тавить"
+msgstr "&Вставить"
 
 #: clip.py:439
 msgid "Clear All"
 msgstr "Очистить всё"
 
-#: __init__.py:200
-msgid "Cleared all"
-msgstr "Всё очищено"
-
 #: clip.py:433
 msgid "Cleared all non-pinned items"
-msgstr "Все незакрепленные элементы очищены"
+msgstr "Очищены все незакрепленные элементы"
+
+#: __init__.py:205
+msgid "Cleared {count} items"
+msgstr "Очищено {count} элементов"
 
 #: clip.py:243
 msgid "Clip History"
@@ -58,15 +58,15 @@ msgstr "Отображаемое имя (необязательно):"
 
 #: clip.py:451
 msgid "Edit"
-msgstr "Редактировать"
+msgstr "Изменить"
 
 #: clip.py:388
 msgid "Edit Item"
-msgstr "Редактировать элемент"
+msgstr "Изменить элемент"
 
 #: clip.py:392
 msgid "Item edited"
-msgstr "Элемент отредактирован"
+msgstr "Элемент изменен"
 
 #: clip.py:449
 msgid "Move Down"
@@ -84,9 +84,13 @@ msgstr "Перемещено вниз"
 msgid "Moved up"
 msgstr "Перемещено вверх"
 
-#: __init__.py:209
+#: __init__.py:203
+msgid "No items to clear"
+msgstr "Нет элементов для очистки"
+
+#: __init__.py:214
 msgid "Opens clip history (single) clears all (double)"
-msgstr "Открыть историю (один раз), очистить всё (два раза)"
+msgstr "Открыть историю (одинарный) очистить всё (двойной)"
 
 #: clip.py:358
 msgid "Paste"

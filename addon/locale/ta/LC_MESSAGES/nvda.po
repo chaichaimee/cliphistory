@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: ClipHistory 2026.5.1\n"
+"Project-Id-Version: ClipHistory 2026.7.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-05-08 10:54+0700\n"
-"PO-Revision-Date: 2026-05-08 10:54+0700\n"
+"POT-Creation-Date: 2026-07-01 08:19+0700\n"
+"PO-Revision-Date: 2026-07-01 08:40+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Tamil\n"
 "Language: ta\n"
@@ -14,31 +14,31 @@ msgstr ""
 
 #: clip.py:215
 msgid "&Cancel"
-msgstr "இரத்து செய் (&C)"
+msgstr "&ரத்து"
 
 #: clip.py:265
 msgid "&Close"
-msgstr "மூடு (&C)"
+msgstr "&மூடு"
 
 #: clip.py:214
 msgid "&OK"
-msgstr "சரி (&O)"
+msgstr "&சரி"
 
 #: clip.py:263
 msgid "&Paste"
-msgstr "ஒட்டு (&P)"
+msgstr "&ஒட்டு"
 
 #: clip.py:439
 msgid "Clear All"
-msgstr "அனைத்தையும் நீக்கு"
-
-#: __init__.py:200
-msgid "Cleared all"
-msgstr "அனைத்தும் நீக்கப்பட்டன"
+msgstr "அனைத்தையும் அழி"
 
 #: clip.py:433
 msgid "Cleared all non-pinned items"
-msgstr "பின் செய்யப்படாத அனைத்தும் நீக்கப்பட்டன"
+msgstr "பின் செய்யப்படாத அனைத்து உருப்படிகளும் அழிக்கப்பட்டன"
+
+#: __init__.py:205
+msgid "Cleared {count} items"
+msgstr "{count} உருப்படிகள் அழிக்கப்பட்டன"
 
 #: clip.py:243
 msgid "Clip History"
@@ -46,11 +46,11 @@ msgstr "கிளிப் வரலாறு"
 
 #: clip.py:452
 msgid "Delete"
-msgstr "அழி"
+msgstr "நீக்கு"
 
 #: clip.py:378
 msgid "Deleted"
-msgstr "அழிக்கப்பட்டது"
+msgstr "நீக்கப்பட்டது"
 
 #: clip.py:200
 msgid "Display name (optional):"
@@ -84,9 +84,13 @@ msgstr "கீழே நகர்த்தப்பட்டது"
 msgid "Moved up"
 msgstr "மேலே நகர்த்தப்பட்டது"
 
-#: __init__.py:209
+#: __init__.py:203
+msgid "No items to clear"
+msgstr "அழிக்க உருப்படிகள் இல்லை"
+
+#: __init__.py:214
 msgid "Opens clip history (single) clears all (double)"
-msgstr "வரலாற்றைத் திறக்க (ஒருமுறை), அனைத்தையும் நீக்க (இருமுறை)"
+msgstr "கிளிப் வரலாற்றைத் திற (ஒற்றை) அனைத்தையும் அழி (இரட்டை)"
 
 #: clip.py:358
 msgid "Paste"
@@ -114,7 +118,7 @@ msgstr "உரை உள்ளடக்கம்:"
 
 #: clip.py:445
 msgid "Unpin"
-msgstr "பின் நீக்கு"
+msgstr "பின்னை நீக்கு"
 
 #: clip.py:404
 msgid "Unpinned"

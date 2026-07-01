@@ -196,8 +196,13 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 			if self._tap_count == 1:
 				self.show_dialog()
 			elif self._tap_count >= 2:
+				# Count the number of items to be deleted (Only those that are not pinned)
+				non_pinned_count = sum(1 for item in self.manager.items if not item.get("pinned", False))
 				self.manager.clear_non_pinned()
-				ui.message(_("Cleared all"))
+				if non_pinned_count == 0:
+					ui.message(_("No items to clear"))
+				else:
+					ui.message(_("Cleared {count} items").format(count=non_pinned_count))
 				if self.dialog and self.dialog.IsShown():
 					wx.CallAfter(self.dialog.update_list)
 		except Exception as e:

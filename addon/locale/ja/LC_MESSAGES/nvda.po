@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: ClipHistory 2026.5.1\n"
+"Project-Id-Version: ClipHistory 2026.7.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-05-08 10:54+0700\n"
-"PO-Revision-Date: 2026-05-08 10:54+0700\n"
+"POT-Creation-Date: 2026-07-01 08:19+0700\n"
+"PO-Revision-Date: 2026-07-01 08:30+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Japanese\n"
 "Language: ja\n"
@@ -22,7 +22,7 @@ msgstr "閉じる(&C)"
 
 #: clip.py:214
 msgid "&OK"
-msgstr "&OK"
+msgstr "OK(&O)"
 
 #: clip.py:263
 msgid "&Paste"
@@ -30,19 +30,19 @@ msgstr "貼り付け(&P)"
 
 #: clip.py:439
 msgid "Clear All"
-msgstr "すべて消去"
-
-#: __init__.py:200
-msgid "Cleared all"
-msgstr "すべて消去しました"
+msgstr "すべてクリア"
 
 #: clip.py:433
 msgid "Cleared all non-pinned items"
-msgstr "固定されていないすべての項目を消去しました"
+msgstr "固定されていないすべてのアイテムをクリアしました"
+
+#: __init__.py:205
+msgid "Cleared {count} items"
+msgstr "{count} 個のアイテムをクリアしました"
 
 #: clip.py:243
 msgid "Clip History"
-msgstr "クリップボードの履歴"
+msgstr "クリップ履歴"
 
 #: clip.py:452
 msgid "Delete"
@@ -62,11 +62,11 @@ msgstr "編集"
 
 #: clip.py:388
 msgid "Edit Item"
-msgstr "項目の編集"
+msgstr "アイテムを編集"
 
 #: clip.py:392
 msgid "Item edited"
-msgstr "項目を編集しました"
+msgstr "アイテムを編集しました"
 
 #: clip.py:449
 msgid "Move Down"
@@ -84,9 +84,13 @@ msgstr "下に移動しました"
 msgid "Moved up"
 msgstr "上に移動しました"
 
-#: __init__.py:209
+#: __init__.py:203
+msgid "No items to clear"
+msgstr "クリアするアイテムはありません"
+
+#: __init__.py:214
 msgid "Opens clip history (single) clears all (double)"
-msgstr "履歴を表示 (1回押す)、すべて消去 (2回押す)"
+msgstr "クリップ履歴を開く (シングル) すべてクリア (ダブル)"
 
 #: clip.py:358
 msgid "Paste"
@@ -98,11 +102,11 @@ msgstr "貼り付けました"
 
 #: clip.py:445
 msgid "Pin"
-msgstr "ピン留め"
+msgstr "固定"
 
 #: clip.py:404
 msgid "Pinned"
-msgstr "ピン留めしました"
+msgstr "固定しました"
 
 #: clip.py:259
 msgid "Text"
@@ -114,8 +118,8 @@ msgstr "テキスト内容:"
 
 #: clip.py:445
 msgid "Unpin"
-msgstr "ピン留め解除"
+msgstr "固定を解除"
 
 #: clip.py:404
 msgid "Unpinned"
-msgstr "ピン留めを解除しました"
+msgstr "固定を解除しました"

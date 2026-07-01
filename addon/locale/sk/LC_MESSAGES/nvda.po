@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: ClipHistory 2026.5.1\n"
+"Project-Id-Version: ClipHistory 2026.7.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-05-08 10:54+0700\n"
-"PO-Revision-Date: 2026-05-08 10:54+0700\n"
+"POT-Creation-Date: 2026-07-01 08:19+0700\n"
+"PO-Revision-Date: 2026-07-01 08:31+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Slovak\n"
 "Language: sk\n"
@@ -32,13 +32,13 @@ msgstr "&Vložiť"
 msgid "Clear All"
 msgstr "Vymazať všetko"
 
-#: __init__.py:200
-msgid "Cleared all"
-msgstr "Všetko bolo vymazané"
-
 #: clip.py:433
 msgid "Cleared all non-pinned items"
-msgstr "Všetky nepripnuté položky boli vymazané"
+msgstr "Všetky nepripnuté položky vymazané"
+
+#: __init__.py:205
+msgid "Cleared {count} items"
+msgstr "Vymazaných {count} položiek"
 
 #: clip.py:243
 msgid "Clip History"
@@ -70,23 +70,27 @@ msgstr "Položka upravená"
 
 #: clip.py:449
 msgid "Move Down"
-msgstr "Presunúť nadol"
+msgstr "Posunúť nadol"
 
 #: clip.py:448
 msgid "Move Up"
-msgstr "Presunúť nahor"
+msgstr "Posunúť nahor"
 
 #: clip.py:428
 msgid "Moved down"
-msgstr "Presunuté nadol"
+msgstr "Posunuté nadol"
 
 #: clip.py:416
 msgid "Moved up"
-msgstr "Presunuté nahor"
+msgstr "Posunuté nahor"
 
-#: __init__.py:209
+#: __init__.py:203
+msgid "No items to clear"
+msgstr "Žiadne položky na vymazanie"
+
+#: __init__.py:214
 msgid "Opens clip history (single) clears all (double)"
-msgstr "Otvorí históriu (raz), vymaže všetko (dvakrát)"
+msgstr "Otvorí históriu (jedno kliknutie) vymaže všetko (dvojité)"
 
 #: clip.py:358
 msgid "Paste"
@@ -114,8 +118,8 @@ msgstr "Textový obsah:"
 
 #: clip.py:445
 msgid "Unpin"
-msgstr "Odpnúť"
+msgstr "Odopnúť"
 
 #: clip.py:404
 msgid "Unpinned"
-msgstr "Odpnuté"
+msgstr "Odopnuté"

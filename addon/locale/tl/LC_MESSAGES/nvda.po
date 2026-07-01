@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: ClipHistory 2026.5.1\n"
+"Project-Id-Version: ClipHistory 2026.7.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-05-08 10:54+0700\n"
-"PO-Revision-Date: 2026-05-08 10:54+0700\n"
+"POT-Creation-Date: 2026-07-01 08:19+0700\n"
+"PO-Revision-Date: 2026-07-01 08:40+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Tagalog\n"
 "Language: tl\n"
@@ -14,11 +14,11 @@ msgstr ""
 
 #: clip.py:215
 msgid "&Cancel"
-msgstr "I-&kansela"
+msgstr "&Kanselahin"
 
 #: clip.py:265
 msgid "&Close"
-msgstr "I-&sara"
+msgstr "&Isara"
 
 #: clip.py:214
 msgid "&OK"
@@ -26,19 +26,19 @@ msgstr "&OK"
 
 #: clip.py:263
 msgid "&Paste"
-msgstr "I-&paste"
+msgstr "&I-paste"
 
 #: clip.py:439
 msgid "Clear All"
-msgstr "I-clear lahat"
-
-#: __init__.py:200
-msgid "Cleared all"
-msgstr "Na-clear na ang lahat"
+msgstr "Linisin ang lahat"
 
 #: clip.py:433
 msgid "Cleared all non-pinned items"
-msgstr "Na-clear na ang lahat ng hindi naka-pin"
+msgstr "Nilinis ang lahat ng hindi naka-pin na item"
+
+#: __init__.py:205
+msgid "Cleared {count} items"
+msgstr "Nilinis ang {count} item"
 
 #: clip.py:243
 msgid "Clip History"
@@ -50,11 +50,11 @@ msgstr "Burahin"
 
 #: clip.py:378
 msgid "Deleted"
-msgstr "Nabura na"
+msgstr "Binura"
 
 #: clip.py:200
 msgid "Display name (optional):"
-msgstr "Pangalan (opsyonal):"
+msgstr "Pangalan ng display (opsyonal):"
 
 #: clip.py:451
 msgid "Edit"
@@ -62,11 +62,11 @@ msgstr "I-edit"
 
 #: clip.py:388
 msgid "Edit Item"
-msgstr "I-edit ang Item"
+msgstr "I-edit ang item"
 
 #: clip.py:392
 msgid "Item edited"
-msgstr "Na-edit na ang item"
+msgstr "In-edit ang item"
 
 #: clip.py:449
 msgid "Move Down"
@@ -78,15 +78,19 @@ msgstr "I-move pataas"
 
 #: clip.py:428
 msgid "Moved down"
-msgstr "Na-move na pababa"
+msgstr "Na-move pababa"
 
 #: clip.py:416
 msgid "Moved up"
-msgstr "Na-move na pataas"
+msgstr "Na-move pataas"
 
-#: __init__.py:209
+#: __init__.py:203
+msgid "No items to clear"
+msgstr "Walang item na lilinisin"
+
+#: __init__.py:214
 msgid "Opens clip history (single) clears all (double)"
-msgstr "Buksan ang history (isa), i-clear lahat (dalawa)"
+msgstr "Buksan ang kasaysayan (single) linisin lahat (double)"
 
 #: clip.py:358
 msgid "Paste"
@@ -94,7 +98,7 @@ msgstr "I-paste"
 
 #: clip.py:370
 msgid "Pasted"
-msgstr "Na-paste na"
+msgstr "Na-paste"
 
 #: clip.py:445
 msgid "Pin"
@@ -106,11 +110,11 @@ msgstr "Naka-pin"
 
 #: clip.py:259
 msgid "Text"
-msgstr "Text"
+msgstr "Teksto"
 
 #: clip.py:205
 msgid "Text content:"
-msgstr "Nilalaman ng text:"
+msgstr "Nilalaman ng teksto:"
 
 #: clip.py:445
 msgid "Unpin"
@@ -118,4 +122,4 @@ msgstr "I-unpin"
 
 #: clip.py:404
 msgid "Unpinned"
-msgstr "Naka-unpin"
+msgstr "Na-unpin"

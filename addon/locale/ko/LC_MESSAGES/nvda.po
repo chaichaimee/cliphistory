@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: ClipHistory 2026.5.1\n"
+"Project-Id-Version: ClipHistory 2026.7.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-05-08 10:54+0700\n"
-"PO-Revision-Date: 2026-05-08 10:54+0700\n"
+"POT-Creation-Date: 2026-07-01 08:19+0700\n"
+"PO-Revision-Date: 2026-07-01 08:30+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Korean\n"
 "Language: ko\n"
@@ -32,17 +32,17 @@ msgstr "붙여넣기(&P)"
 msgid "Clear All"
 msgstr "모두 지우기"
 
-#: __init__.py:200
-msgid "Cleared all"
-msgstr "모두 지워짐"
-
 #: clip.py:433
 msgid "Cleared all non-pinned items"
-msgstr "고정되지 않은 모든 항목이 지워짐"
+msgstr "고정되지 않은 모든 항목을 지웠습니다"
+
+#: __init__.py:205
+msgid "Cleared {count} items"
+msgstr "{count}개의 항목을 지웠습니다"
 
 #: clip.py:243
 msgid "Clip History"
-msgstr "클립보드 기록"
+msgstr "클립 내역"
 
 #: clip.py:452
 msgid "Delete"
@@ -84,9 +84,13 @@ msgstr "아래로 이동됨"
 msgid "Moved up"
 msgstr "위로 이동됨"
 
-#: __init__.py:209
+#: __init__.py:203
+msgid "No items to clear"
+msgstr "지울 항목이 없습니다"
+
+#: __init__.py:214
 msgid "Opens clip history (single) clears all (double)"
-msgstr "기록 열기 (한 번), 모두 지우기 (두 번 누름)"
+msgstr "클립 내역 열기 (단일 클릭) 모두 지우기 (더블 클릭)"
 
 #: clip.py:358
 msgid "Paste"

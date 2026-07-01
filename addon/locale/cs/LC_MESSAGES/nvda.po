@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: ClipHistory 2026.5.1\n"
+"Project-Id-Version: ClipHistory 2026.7.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-05-08 10:54+0700\n"
-"PO-Revision-Date: 2026-05-08 10:54+0700\n"
+"POT-Creation-Date: 2026-07-01 08:19+0700\n"
+"PO-Revision-Date: 2026-07-01 08:24+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Czech\n"
 "Language: cs\n"
@@ -14,7 +14,7 @@ msgstr ""
 
 #: clip.py:215
 msgid "&Cancel"
-msgstr "&Storno"
+msgstr "&Zrušit"
 
 #: clip.py:265
 msgid "&Close"
@@ -32,13 +32,13 @@ msgstr "&Vložit"
 msgid "Clear All"
 msgstr "Vymazat vše"
 
-#: __init__.py:200
-msgid "Cleared all"
-msgstr "Vše vymazáno"
-
 #: clip.py:433
 msgid "Cleared all non-pinned items"
-msgstr "Všechny nepřipnuté položky byly vymazány"
+msgstr "Všechny nepřipnuté položky vymazány"
+
+#: __init__.py:205
+msgid "Cleared {count} items"
+msgstr "Vymazáno {count} položek"
 
 #: clip.py:243
 msgid "Clip History"
@@ -54,7 +54,7 @@ msgstr "Smazáno"
 
 #: clip.py:200
 msgid "Display name (optional):"
-msgstr "Zobrazované jméno (volitelné):"
+msgstr "Zobrazované jméno (nepovinné):"
 
 #: clip.py:451
 msgid "Edit"
@@ -70,23 +70,27 @@ msgstr "Položka upravena"
 
 #: clip.py:449
 msgid "Move Down"
-msgstr "Přesunout dolů"
+msgstr "Posunout dolů"
 
 #: clip.py:448
 msgid "Move Up"
-msgstr "Přesunout nahoru"
+msgstr "Posunout nahoru"
 
 #: clip.py:428
 msgid "Moved down"
-msgstr "Přesunuto dolů"
+msgstr "Posunuto dolů"
 
 #: clip.py:416
 msgid "Moved up"
-msgstr "Přesunuto nahoru"
+msgstr "Posunuto nahoru"
 
-#: __init__.py:209
+#: __init__.py:203
+msgid "No items to clear"
+msgstr "Žádné položky k vymazání"
+
+#: __init__.py:214
 msgid "Opens clip history (single) clears all (double)"
-msgstr "Otevře historii (jeden stisk), vymaže vše (dva stisky)"
+msgstr "Otevře historii schránky (jedno kliknutí), vymaže vše (dvojité)"
 
 #: clip.py:358
 msgid "Paste"

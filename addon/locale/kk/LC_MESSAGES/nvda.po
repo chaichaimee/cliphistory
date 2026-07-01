@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: ClipHistory 2026.5.1\n"
+"Project-Id-Version: ClipHistory 2026.7.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-05-08 10:54+0700\n"
-"PO-Revision-Date: 2026-05-08 10:54+0700\n"
+"POT-Creation-Date: 2026-07-01 08:19+0700\n"
+"PO-Revision-Date: 2026-07-01 08:30+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Kazakh\n"
 "Language: kk\n"
@@ -14,7 +14,7 @@ msgstr ""
 
 #: clip.py:215
 msgid "&Cancel"
-msgstr "&Бас тарту"
+msgstr "&Болдырмау"
 
 #: clip.py:265
 msgid "&Close"
@@ -26,35 +26,35 @@ msgstr "&ОК"
 
 #: clip.py:263
 msgid "&Paste"
-msgstr "&Қою"
+msgstr "&Кірістіру"
 
 #: clip.py:439
 msgid "Clear All"
-msgstr "Барлығын тазалау"
-
-#: __init__.py:200
-msgid "Cleared all"
-msgstr "Барлығы тазаланды"
+msgstr "Барлығын тазарту"
 
 #: clip.py:433
 msgid "Cleared all non-pinned items"
-msgstr "Барлық бекітілмеген элементтер тазаланды"
+msgstr "Бекітілмеген барлық элементтер тазартылды"
+
+#: __init__.py:205
+msgid "Cleared {count} items"
+msgstr "{count} элемент тазартылды"
 
 #: clip.py:243
 msgid "Clip History"
-msgstr "Алмасу буферінің тарихы"
+msgstr "Клиптер тарихы"
 
 #: clip.py:452
 msgid "Delete"
-msgstr "Өшіру"
+msgstr "Жою"
 
 #: clip.py:378
 msgid "Deleted"
-msgstr "Өшірілді"
+msgstr "Жойылды"
 
 #: clip.py:200
 msgid "Display name (optional):"
-msgstr "Көрсетілетін атау (міндетті емес):"
+msgstr "Көрсетілетін аты (міндетті емес):"
 
 #: clip.py:451
 msgid "Edit"
@@ -84,17 +84,21 @@ msgstr "Төмен жылжытылды"
 msgid "Moved up"
 msgstr "Жоғары жылжытылды"
 
-#: __init__.py:209
+#: __init__.py:203
+msgid "No items to clear"
+msgstr "Тазартатын элементтер жоқ"
+
+#: __init__.py:214
 msgid "Opens clip history (single) clears all (double)"
-msgstr "Тарихты ашу (бір рет), барлығын тазалау (екі рет)"
+msgstr "Клиптер тарихын ашу (бір рет) барлығын тазарту (екі рет)"
 
 #: clip.py:358
 msgid "Paste"
-msgstr "Қою"
+msgstr "Кірістіру"
 
 #: clip.py:370
 msgid "Pasted"
-msgstr "Қойылды"
+msgstr "Кірістірілді"
 
 #: clip.py:445
 msgid "Pin"
@@ -114,7 +118,7 @@ msgstr "Мәтін мазмұны:"
 
 #: clip.py:445
 msgid "Unpin"
-msgstr "Бекітуді алу"
+msgstr "Бекітуді алып тастау"
 
 #: clip.py:404
 msgid "Unpinned"

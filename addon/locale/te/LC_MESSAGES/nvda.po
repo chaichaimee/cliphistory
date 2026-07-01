@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: ClipHistory 2026.5.1\n"
+"Project-Id-Version: ClipHistory 2026.7.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-05-08 10:54+0700\n"
-"PO-Revision-Date: 2026-05-08 10:54+0700\n"
+"POT-Creation-Date: 2026-07-01 08:19+0700\n"
+"PO-Revision-Date: 2026-07-01 08:40+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Telugu\n"
 "Language: te\n"
@@ -14,35 +14,35 @@ msgstr ""
 
 #: clip.py:215
 msgid "&Cancel"
-msgstr "రద్దు చేయి (&C)"
+msgstr "&రద్దు"
 
 #: clip.py:265
 msgid "&Close"
-msgstr "మూసివేయి (&C)"
+msgstr "&మూసివేయి"
 
 #: clip.py:214
 msgid "&OK"
-msgstr "సరే (&O)"
+msgstr "&సరే"
 
 #: clip.py:263
 msgid "&Paste"
-msgstr "అతికించు (&P)"
+msgstr "&అంటించు"
 
 #: clip.py:439
 msgid "Clear All"
-msgstr "అన్నీ తుడిచివేయి"
-
-#: __init__.py:200
-msgid "Cleared all"
-msgstr "అన్నీ తుడిచివేయబడ్డాయి"
+msgstr "అన్నీ క్లియర్ చేయి"
 
 #: clip.py:433
 msgid "Cleared all non-pinned items"
-msgstr "పిన్ చేయనివన్నీ తుడిచివేయబడ్డాయి"
+msgstr "పిన్ చేయని అన్ని అంశాలను క్లియర్ చేశాను"
+
+#: __init__.py:205
+msgid "Cleared {count} items"
+msgstr "{count} అంశాలు క్లియర్ చేయబడ్డాయి"
 
 #: clip.py:243
 msgid "Clip History"
-msgstr "క్లిప్ చరిత్ర"
+msgstr "క్లిప్ హిస్టరీ"
 
 #: clip.py:452
 msgid "Delete"
@@ -70,7 +70,7 @@ msgstr "అంశం సవరించబడింది"
 
 #: clip.py:449
 msgid "Move Down"
-msgstr "క్రిందికి జరుపు"
+msgstr "కిందికి జరుపు"
 
 #: clip.py:448
 msgid "Move Up"
@@ -78,23 +78,27 @@ msgstr "పైకి జరుపు"
 
 #: clip.py:428
 msgid "Moved down"
-msgstr "క్రిందికి జరపబడింది"
+msgstr "కిందికి జరపబడింది"
 
 #: clip.py:416
 msgid "Moved up"
 msgstr "పైకి జరపబడింది"
 
-#: __init__.py:209
+#: __init__.py:203
+msgid "No items to clear"
+msgstr "క్లియర్ చేయడానికి అంశాలు లేవు"
+
+#: __init__.py:214
 msgid "Opens clip history (single) clears all (double)"
-msgstr "చరిత్రను తెరువు (ఒకసారి), అన్నీ తుడిచివేయి (రెండుసార్లు)"
+msgstr "క్లిప్ హిస్టరీని తెరువు (సింగిల్) అన్నీ క్లియర్ చేయి (డబుల్)"
 
 #: clip.py:358
 msgid "Paste"
-msgstr "అతికించు"
+msgstr "అంటించు"
 
 #: clip.py:370
 msgid "Pasted"
-msgstr "అతికించబడింది"
+msgstr "అంటించబడింది"
 
 #: clip.py:445
 msgid "Pin"
@@ -106,16 +110,16 @@ msgstr "పిన్ చేయబడింది"
 
 #: clip.py:259
 msgid "Text"
-msgstr "పాఠ్యం"
+msgstr "టెక్స్ట్"
 
 #: clip.py:205
 msgid "Text content:"
-msgstr "పాఠ్యం కంటెంట్:"
+msgstr "టెక్స్ట్ కంటెంట్:"
 
 #: clip.py:445
 msgid "Unpin"
-msgstr "పిన్ తొలగించు"
+msgstr "పిన్ తీసేయి"
 
 #: clip.py:404
 msgid "Unpinned"
-msgstr "పిన్ తొలగించబడింది"
+msgstr "పిన్ తీసేయబడింది"

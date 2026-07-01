@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: ClipHistory 2026.5.1\n"
+"Project-Id-Version: ClipHistory 2026.7.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-05-08 10:54+0700\n"
-"PO-Revision-Date: 2026-05-08 10:54+0700\n"
+"POT-Creation-Date: 2026-07-01 08:19+0700\n"
+"PO-Revision-Date: 2026-07-01 08:24+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Bulgarian\n"
 "Language: bg\n"
@@ -18,27 +18,27 @@ msgstr "&Отказ"
 
 #: clip.py:265
 msgid "&Close"
-msgstr "&Затвори"
+msgstr "&Затваряне"
 
 #: clip.py:214
 msgid "&OK"
-msgstr "&ОК"
+msgstr "&Добре"
 
 #: clip.py:263
 msgid "&Paste"
-msgstr "&Постави"
+msgstr "&Поставяне"
 
 #: clip.py:439
 msgid "Clear All"
-msgstr "Изчисти всичко"
-
-#: __init__.py:200
-msgid "Cleared all"
-msgstr "Всичко е изчистено"
+msgstr "Изчистване на всички"
 
 #: clip.py:433
 msgid "Cleared all non-pinned items"
-msgstr "Всички незакачени елементи са изчистени"
+msgstr "Изчистени са всички незакрепени елементи"
+
+#: __init__.py:205
+msgid "Cleared {count} items"
+msgstr "Изчистени са {count} елемента"
 
 #: clip.py:243
 msgid "Clip History"
@@ -46,7 +46,7 @@ msgstr "История на клипборда"
 
 #: clip.py:452
 msgid "Delete"
-msgstr "Изтрий"
+msgstr "Изтриване"
 
 #: clip.py:378
 msgid "Deleted"
@@ -54,11 +54,11 @@ msgstr "Изтрито"
 
 #: clip.py:200
 msgid "Display name (optional):"
-msgstr "Име за показване (по избор):"
+msgstr "Име за показване (опционално):"
 
 #: clip.py:451
 msgid "Edit"
-msgstr "Редактирай"
+msgstr "Редактиране"
 
 #: clip.py:388
 msgid "Edit Item"
@@ -70,11 +70,11 @@ msgstr "Елементът е редактиран"
 
 #: clip.py:449
 msgid "Move Down"
-msgstr "Премести надолу"
+msgstr "Преместване надолу"
 
 #: clip.py:448
 msgid "Move Up"
-msgstr "Премести нагоре"
+msgstr "Преместване нагоре"
 
 #: clip.py:428
 msgid "Moved down"
@@ -84,13 +84,17 @@ msgstr "Преместено надолу"
 msgid "Moved up"
 msgstr "Преместено нагоре"
 
-#: __init__.py:209
+#: __init__.py:203
+msgid "No items to clear"
+msgstr "Няма елементи за изчистване"
+
+#: __init__.py:214
 msgid "Opens clip history (single) clears all (double)"
-msgstr "Отваря историята (еднократно), изчиства всичко (двукратно)"
+msgstr "Отваря историята (единично) изчиства всичко (двойно)"
 
 #: clip.py:358
 msgid "Paste"
-msgstr "Постави"
+msgstr "Поставяне"
 
 #: clip.py:370
 msgid "Pasted"
@@ -98,11 +102,11 @@ msgstr "Поставено"
 
 #: clip.py:445
 msgid "Pin"
-msgstr "Закачи"
+msgstr "Закрепване"
 
 #: clip.py:404
 msgid "Pinned"
-msgstr "Закачено"
+msgstr "Закрепено"
 
 #: clip.py:259
 msgid "Text"
@@ -114,8 +118,8 @@ msgstr "Текстово съдържание:"
 
 #: clip.py:445
 msgid "Unpin"
-msgstr "Откачи"
+msgstr "Отказ от закрепване"
 
 #: clip.py:404
 msgid "Unpinned"
-msgstr "Откачено"
+msgstr "Открепено"

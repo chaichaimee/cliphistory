@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: ClipHistory 2026.5.1\n"
+"Project-Id-Version: ClipHistory 2026.7.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-05-08 10:54+0700\n"
-"PO-Revision-Date: 2026-05-08 10:54+0700\n"
+"POT-Creation-Date: 2026-07-01 08:19+0700\n"
+"PO-Revision-Date: 2026-07-01 08:30+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Italian\n"
 "Language: it\n"
@@ -32,17 +32,17 @@ msgstr "&Incolla"
 msgid "Clear All"
 msgstr "Cancella tutto"
 
-#: __init__.py:200
-msgid "Cleared all"
-msgstr "Tutto cancellato"
-
 #: clip.py:433
 msgid "Cleared all non-pinned items"
-msgstr "Cancellati tutti gli elementi non fissati"
+msgstr "Cancellati tutti gli elementi non bloccati"
+
+#: __init__.py:205
+msgid "Cleared {count} items"
+msgstr "{count} elementi cancellati"
 
 #: clip.py:243
 msgid "Clip History"
-msgstr "Cronologia appunti"
+msgstr "Cronologia Appunti"
 
 #: clip.py:452
 msgid "Delete"
@@ -54,7 +54,7 @@ msgstr "Eliminato"
 
 #: clip.py:200
 msgid "Display name (optional):"
-msgstr "Nome visualizzato (opzionale):"
+msgstr "Nome visualizzato (facoltativo):"
 
 #: clip.py:451
 msgid "Edit"
@@ -84,9 +84,13 @@ msgstr "Spostato giù"
 msgid "Moved up"
 msgstr "Spostato su"
 
-#: __init__.py:209
+#: __init__.py:203
+msgid "No items to clear"
+msgstr "Nessun elemento da cancellare"
+
+#: __init__.py:214
 msgid "Opens clip history (single) clears all (double)"
-msgstr "Apre la cronologia (singolo), cancella tutto (doppio)"
+msgstr "Apre la cronologia (singolo) cancella tutto (doppio)"
 
 #: clip.py:358
 msgid "Paste"
@@ -98,11 +102,11 @@ msgstr "Incollato"
 
 #: clip.py:445
 msgid "Pin"
-msgstr "Fissa"
+msgstr "Blocca"
 
 #: clip.py:404
 msgid "Pinned"
-msgstr "Fissato"
+msgstr "Bloccato"
 
 #: clip.py:259
 msgid "Text"
@@ -110,12 +114,12 @@ msgstr "Testo"
 
 #: clip.py:205
 msgid "Text content:"
-msgstr "Contenuto del testo:"
+msgstr "Contenuto testo:"
 
 #: clip.py:445
 msgid "Unpin"
-msgstr "Rimuovi fissaggio"
+msgstr "Sblocca"
 
 #: clip.py:404
 msgid "Unpinned"
-msgstr "Fissaggio rimosso"
+msgstr "Sbloccato"

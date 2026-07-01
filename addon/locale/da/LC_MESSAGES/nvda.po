@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: ClipHistory 2026.5.1\n"
+"Project-Id-Version: ClipHistory 2026.7.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-05-08 10:54+0700\n"
-"PO-Revision-Date: 2026-05-08 10:54+0700\n"
+"POT-Creation-Date: 2026-07-01 08:19+0700\n"
+"PO-Revision-Date: 2026-07-01 08:24+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Danish\n"
 "Language: da\n"
@@ -26,23 +26,23 @@ msgstr "&OK"
 
 #: clip.py:263
 msgid "&Paste"
-msgstr "&Sæt ind"
+msgstr "&Indsæt"
 
 #: clip.py:439
 msgid "Clear All"
-msgstr "Ryd alle"
-
-#: __init__.py:200
-msgid "Cleared all"
-msgstr "Rydde alle"
+msgstr "Ryd alt"
 
 #: clip.py:433
 msgid "Cleared all non-pinned items"
-msgstr "Rydde alle ikke-fastgjorte elementer"
+msgstr "Ryddede alle ikke-fastgjorte elementer"
+
+#: __init__.py:205
+msgid "Cleared {count} items"
+msgstr "Ryddede {count} elementer"
 
 #: clip.py:243
 msgid "Clip History"
-msgstr "Klippebordshistorik"
+msgstr "Udklipshistorik"
 
 #: clip.py:452
 msgid "Delete"
@@ -84,13 +84,17 @@ msgstr "Flyttet ned"
 msgid "Moved up"
 msgstr "Flyttet op"
 
-#: __init__.py:209
+#: __init__.py:203
+msgid "No items to clear"
+msgstr "Ingen elementer at rydde"
+
+#: __init__.py:214
 msgid "Opens clip history (single) clears all (double)"
-msgstr "Åbner historik (enkelt tryk) rydder alt (dobbelt tryk)"
+msgstr "Åbner udklipshistorik (enkelt) rydder alt (dobbelt)"
 
 #: clip.py:358
 msgid "Paste"
-msgstr "Sæt ind"
+msgstr "Indsæt"
 
 #: clip.py:370
 msgid "Pasted"

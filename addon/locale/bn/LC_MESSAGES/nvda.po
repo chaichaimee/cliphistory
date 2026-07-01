@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: ClipHistory 2026.5.1\n"
+"Project-Id-Version: ClipHistory 2026.7.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-05-08 10:54+0700\n"
-"PO-Revision-Date: 2026-05-08 10:54+0700\n"
+"POT-Creation-Date: 2026-07-01 08:19+0700\n"
+"PO-Revision-Date: 2026-07-01 08:24+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Bengali\n"
 "Language: bn\n"
@@ -14,35 +14,35 @@ msgstr ""
 
 #: clip.py:215
 msgid "&Cancel"
-msgstr "বাতিল (&C)"
+msgstr "&বাতিল"
 
 #: clip.py:265
 msgid "&Close"
-msgstr "বন্ধ করুন (&C)"
+msgstr "&বন্ধ"
 
 #: clip.py:214
 msgid "&OK"
-msgstr "ঠিক আছে (&O)"
+msgstr "&ঠিক আছে"
 
 #: clip.py:263
 msgid "&Paste"
-msgstr "পেস্ট করুন (&P)"
+msgstr "&পেস্ট করুন"
 
 #: clip.py:439
 msgid "Clear All"
 msgstr "সব মুছে ফেলুন"
 
-#: __init__.py:200
-msgid "Cleared all"
-msgstr "সব মুছে ফেলা হয়েছে"
-
 #: clip.py:433
 msgid "Cleared all non-pinned items"
-msgstr "পিন না করা সব আইটেম মুছে ফেলা হয়েছে"
+msgstr "সব পিন-বিহীন আইটেম মুছে ফেলা হয়েছে"
+
+#: __init__.py:205
+msgid "Cleared {count} items"
+msgstr "{count} টি আইটেম মুছে ফেলা হয়েছে"
 
 #: clip.py:243
 msgid "Clip History"
-msgstr "ক্লিপবোর্ড ইতিহাস"
+msgstr "ক্লিপ হিস্ট্রি"
 
 #: clip.py:452
 msgid "Delete"
@@ -50,7 +50,7 @@ msgstr "মুছে ফেলুন"
 
 #: clip.py:378
 msgid "Deleted"
-msgstr "মুছে ফেলা হয়েছে"
+msgstr "মুছে ফেলা হয়েছে"
 
 #: clip.py:200
 msgid "Display name (optional):"
@@ -66,27 +66,31 @@ msgstr "আইটেম সম্পাদনা"
 
 #: clip.py:392
 msgid "Item edited"
-msgstr "আইটেম সম্পাদিত হয়েছে"
+msgstr "আইটেম সম্পাদিত হয়েছে"
 
 #: clip.py:449
 msgid "Move Down"
-msgstr "নিচে নামান"
+msgstr "নিচে সরান"
 
 #: clip.py:448
 msgid "Move Up"
-msgstr "উপরে তুলুন"
+msgstr "উপরে সরান"
 
 #: clip.py:428
 msgid "Moved down"
-msgstr "নিচে নামানো হয়েছে"
+msgstr "নিচে সরানো হয়েছে"
 
 #: clip.py:416
 msgid "Moved up"
-msgstr "উপরে তোলা হয়েছে"
+msgstr "উপরে সরানো হয়েছে"
 
-#: __init__.py:209
+#: __init__.py:203
+msgid "No items to clear"
+msgstr "মুছে ফেলার মতো কোনো আইটেম নেই"
+
+#: __init__.py:214
 msgid "Opens clip history (single) clears all (double)"
-msgstr "ক্লিপ ইতিহাস খোলে (একবার), সব মুছে দেয় (দুইবার)"
+msgstr "ক্লিপ হিস্ট্রি খোলে (একবার ক্লিক) সব মুছে ফেলে (দুইবার ক্লিক)"
 
 #: clip.py:358
 msgid "Paste"
@@ -94,15 +98,15 @@ msgstr "পেস্ট"
 
 #: clip.py:370
 msgid "Pasted"
-msgstr "পেস্ট করা হয়েছে"
+msgstr "পেস্ট করা হয়েছে"
 
 #: clip.py:445
 msgid "Pin"
-msgstr "পিন করুন"
+msgstr "পিন"
 
 #: clip.py:404
 msgid "Pinned"
-msgstr "পিন করা হয়েছে"
+msgstr "পিন করা হয়েছে"
 
 #: clip.py:259
 msgid "Text"
@@ -110,12 +114,12 @@ msgstr "টেক্সট"
 
 #: clip.py:205
 msgid "Text content:"
-msgstr "টেক্সট কন্টেন্ট:"
+msgstr "টেক্সট বিষয়বস্তু:"
 
 #: clip.py:445
 msgid "Unpin"
-msgstr "আনপিন করুন"
+msgstr "আনপিন"
 
 #: clip.py:404
 msgid "Unpinned"
-msgstr "আনপিন করা হয়েছে"
+msgstr "আনপিন করা হয়েছে"

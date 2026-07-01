@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: ClipHistory 2026.5.1\n"
+"Project-Id-Version: ClipHistory 2026.7.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-05-08 10:54+0700\n"
-"PO-Revision-Date: 2026-05-08 10:54+0700\n"
+"POT-Creation-Date: 2026-07-01 08:19+0700\n"
+"PO-Revision-Date: 2026-07-01 08:40+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Turkmen\n"
 "Language: tk\n"
@@ -14,11 +14,11 @@ msgstr ""
 
 #: clip.py:215
 msgid "&Cancel"
-msgstr "Ýat&yr"
+msgstr "&Ýatyrmak"
 
 #: clip.py:265
 msgid "&Close"
-msgstr "&Ýap"
+msgstr "&Ýapmak"
 
 #: clip.py:214
 msgid "&OK"
@@ -26,55 +26,55 @@ msgstr "&Bolýar"
 
 #: clip.py:263
 msgid "&Paste"
-msgstr "&Goý"
+msgstr "&Goýmak"
 
 #: clip.py:439
 msgid "Clear All"
-msgstr "Ählisini arassala"
-
-#: __init__.py:200
-msgid "Cleared all"
-msgstr "Ählisi arassalandy"
+msgstr "Ählisini arassalamak"
 
 #: clip.py:433
 msgid "Cleared all non-pinned items"
-msgstr "Berkidilmedik ähli zatlar arassalandy"
+msgstr "Bellenmedik ähli elementler arassalandy"
+
+#: __init__.py:205
+msgid "Cleared {count} items"
+msgstr "{count} element arassalandy"
 
 #: clip.py:243
 msgid "Clip History"
-msgstr "Gysgyç taryhy"
+msgstr "Klip taryhy"
 
 #: clip.py:452
 msgid "Delete"
-msgstr "Öçür"
+msgstr "Pozmak"
 
 #: clip.py:378
 msgid "Deleted"
-msgstr "Öçürildi"
+msgstr "Pozuldy"
 
 #: clip.py:200
 msgid "Display name (optional):"
-msgstr "Görkezilýän ady (islege görä):"
+msgstr "Görkezilýän ady (hökmany däl):"
 
 #: clip.py:451
 msgid "Edit"
-msgstr "Düzet"
+msgstr "Üýtgetmek"
 
 #: clip.py:388
 msgid "Edit Item"
-msgstr "Zady düzet"
+msgstr "Elementi üýtgetmek"
 
 #: clip.py:392
 msgid "Item edited"
-msgstr "Zat düzedildi"
+msgstr "Element üýtgedildi"
 
 #: clip.py:449
 msgid "Move Down"
-msgstr "Aşak süýşür"
+msgstr "Aşak süýşürmek"
 
 #: clip.py:448
 msgid "Move Up"
-msgstr "Ýokary süýşür"
+msgstr "Ýokary süýşürmek"
 
 #: clip.py:428
 msgid "Moved down"
@@ -84,13 +84,17 @@ msgstr "Aşak süýşürildi"
 msgid "Moved up"
 msgstr "Ýokary süýşürildi"
 
-#: __init__.py:209
+#: __init__.py:203
+msgid "No items to clear"
+msgstr "Arassalanmaly element ýok"
+
+#: __init__.py:214
 msgid "Opens clip history (single) clears all (double)"
-msgstr "Taryhy aç (bir gezek), ählisini arassala (iki gezek)"
+msgstr "Klip taryhyny açmak (bir gezek) ählisini arassalamak (iki gezek)"
 
 #: clip.py:358
 msgid "Paste"
-msgstr "Goý"
+msgstr "Goýmak"
 
 #: clip.py:370
 msgid "Pasted"
@@ -98,11 +102,11 @@ msgstr "Goýuldy"
 
 #: clip.py:445
 msgid "Pin"
-msgstr "Berkit"
+msgstr "Bellemek"
 
 #: clip.py:404
 msgid "Pinned"
-msgstr "Berkidildi"
+msgstr "Bellenildi"
 
 #: clip.py:259
 msgid "Text"
@@ -114,8 +118,8 @@ msgstr "Tekst mazmuny:"
 
 #: clip.py:445
 msgid "Unpin"
-msgstr "Aýyr"
+msgstr "Bellenenini aýyrmak"
 
 #: clip.py:404
 msgid "Unpinned"
-msgstr "Aýрылды"
+msgstr "Belleneni aýryldy"

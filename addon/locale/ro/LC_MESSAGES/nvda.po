@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: ClipHistory 2026.5.1\n"
+"Project-Id-Version: ClipHistory 2026.7.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-05-08 10:54+0700\n"
-"PO-Revision-Date: 2026-05-08 10:54+0700\n"
+"POT-Creation-Date: 2026-07-01 08:19+0700\n"
+"PO-Revision-Date: 2026-07-01 08:31+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Romanian\n"
 "Language: ro\n"
@@ -14,11 +14,11 @@ msgstr ""
 
 #: clip.py:215
 msgid "&Cancel"
-msgstr "&Anulează"
+msgstr "&Anulare"
 
 #: clip.py:265
 msgid "&Close"
-msgstr "Î&nchide"
+msgstr "&Închidere"
 
 #: clip.py:214
 msgid "&OK"
@@ -26,27 +26,27 @@ msgstr "&OK"
 
 #: clip.py:263
 msgid "&Paste"
-msgstr "Li&pește"
+msgstr "&Lipire"
 
 #: clip.py:439
 msgid "Clear All"
-msgstr "Șterge tot"
-
-#: __init__.py:200
-msgid "Cleared all"
-msgstr "Toate elementele au fost șterse"
+msgstr "Ștergere tot"
 
 #: clip.py:433
 msgid "Cleared all non-pinned items"
 msgstr "Toate elementele nefixate au fost șterse"
 
+#: __init__.py:205
+msgid "Cleared {count} items"
+msgstr "{count} elemente șterse"
+
 #: clip.py:243
 msgid "Clip History"
-msgstr "Istoric Clipboard"
+msgstr "Istoric clipboard"
 
 #: clip.py:452
 msgid "Delete"
-msgstr "Șterge"
+msgstr "Ștergere"
 
 #: clip.py:378
 msgid "Deleted"
@@ -58,11 +58,11 @@ msgstr "Nume afișat (opțional):"
 
 #: clip.py:451
 msgid "Edit"
-msgstr "Editează"
+msgstr "Editare"
 
 #: clip.py:388
 msgid "Edit Item"
-msgstr "Editează elementul"
+msgstr "Editare element"
 
 #: clip.py:392
 msgid "Item edited"
@@ -70,11 +70,11 @@ msgstr "Element editat"
 
 #: clip.py:449
 msgid "Move Down"
-msgstr "Mută în jos"
+msgstr "Mutare în jos"
 
 #: clip.py:448
 msgid "Move Up"
-msgstr "Mută în sus"
+msgstr "Mutare în sus"
 
 #: clip.py:428
 msgid "Moved down"
@@ -84,13 +84,17 @@ msgstr "Mutat în jos"
 msgid "Moved up"
 msgstr "Mutat în sus"
 
-#: __init__.py:209
+#: __init__.py:203
+msgid "No items to clear"
+msgstr "Nu există elemente de șters"
+
+#: __init__.py:214
 msgid "Opens clip history (single) clears all (double)"
-msgstr "Deschide istoric (o apăsare), șterge tot (două apăsări)"
+msgstr "Deschide istoricul (simplu) șterge tot (dublu)"
 
 #: clip.py:358
 msgid "Paste"
-msgstr "Lipește"
+msgstr "Lipire"
 
 #: clip.py:370
 msgid "Pasted"
@@ -98,7 +102,7 @@ msgstr "Lipit"
 
 #: clip.py:445
 msgid "Pin"
-msgstr "Fixează"
+msgstr "Fixare"
 
 #: clip.py:404
 msgid "Pinned"
@@ -114,8 +118,8 @@ msgstr "Conținut text:"
 
 #: clip.py:445
 msgid "Unpin"
-msgstr "Anulează fixarea"
+msgstr "Defixare"
 
 #: clip.py:404
 msgid "Unpinned"
-msgstr "Fixare anulată"
+msgstr "Defixat"

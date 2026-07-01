@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: ClipHistory 2026.5.1\n"
+"Project-Id-Version: ClipHistory 2026.7.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-05-08 10:54+0700\n"
-"PO-Revision-Date: 2026-05-08 10:54+0700\n"
+"POT-Creation-Date: 2026-07-01 08:19+0700\n"
+"PO-Revision-Date: 2026-07-01 08:31+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Burmese\n"
 "Language: my\n"
@@ -14,47 +14,47 @@ msgstr ""
 
 #: clip.py:215
 msgid "&Cancel"
-msgstr "ပယ်ဖျက်ရန် (&C)"
+msgstr "&မလုပ်တော့ပါ"
 
 #: clip.py:265
 msgid "&Close"
-msgstr "ပိတ်ရန် (&C)"
+msgstr "&ပိတ်ရန်"
 
 #: clip.py:214
 msgid "&OK"
-msgstr "ကောင်းပြီ (&O)"
+msgstr "&ဟုတ်ကဲ့"
 
 #: clip.py:263
 msgid "&Paste"
-msgstr "ကူးထည့်ရန် (&P)"
+msgstr "&ကူးထည့်ရန်"
 
 #: clip.py:439
 msgid "Clear All"
 msgstr "အားလုံးရှင်းလင်းရန်"
 
-#: __init__.py:200
-msgid "Cleared all"
-msgstr "အားလုံးရှင်းလင်းပြီး"
-
 #: clip.py:433
 msgid "Cleared all non-pinned items"
-msgstr "ပင်မထိုးထားသည့်အရာအားလုံး ရှင်းလင်းပြီး"
+msgstr "pin မလုပ်ထားသော အရာအားလုံးကို ရှင်းလင်းပြီးပါပြီ"
+
+#: __init__.py:205
+msgid "Cleared {count} items"
+msgstr "အရာ {count} ခုကို ရှင်းလင်းပြီးပါပြီ"
 
 #: clip.py:243
 msgid "Clip History"
-msgstr "မှတ်သားမှုသမိုင်း"
+msgstr "ကလစ်မှတ်တမ်း"
 
 #: clip.py:452
 msgid "Delete"
-msgstr "ဖျက်ပါ"
+msgstr "ဖျက်ရန်"
 
 #: clip.py:378
 msgid "Deleted"
-msgstr "ဖျက်ပြီး"
+msgstr "ဖျက်ပြီးပါပြီ"
 
 #: clip.py:200
 msgid "Display name (optional):"
-msgstr "ပြသရန်အမည် (စိတ်ကြိုက်):"
+msgstr "ပြသမည့်အမည် (ရွေးချယ်နိုင်သည်):"
 
 #: clip.py:451
 msgid "Edit"
@@ -62,11 +62,11 @@ msgstr "ပြင်ဆင်ရန်"
 
 #: clip.py:388
 msgid "Edit Item"
-msgstr "အရာကိုပြင်ဆင်ရန်"
+msgstr "အရာဝတ္ထုကို ပြင်ဆင်ရန်"
 
 #: clip.py:392
 msgid "Item edited"
-msgstr "အရာကို ပြင်ဆင်ပြီး"
+msgstr "ပြင်ဆင်ပြီးပါပြီ"
 
 #: clip.py:449
 msgid "Move Down"
@@ -74,35 +74,39 @@ msgstr "အောက်သို့ရွှေ့ရန်"
 
 #: clip.py:448
 msgid "Move Up"
-msgstr "အထက်သို့ရွှေ့ရန်"
+msgstr "အပေါ်သို့ရွှေ့ရန်"
 
 #: clip.py:428
 msgid "Moved down"
-msgstr "အောက်သို့ရွှေ့ပြီး"
+msgstr "အောက်သို့ ရွှေ့လိုက်ပါပြီ"
 
 #: clip.py:416
 msgid "Moved up"
-msgstr "အထက်သို့ရွှေ့ပြီး"
+msgstr "အပေါ်သို့ ရွှေ့လိုက်ပါပြီ"
 
-#: __init__.py:209
+#: __init__.py:203
+msgid "No items to clear"
+msgstr "ရှင်းလင်းစရာ မရှိပါ"
+
+#: __init__.py:214
 msgid "Opens clip history (single) clears all (double)"
-msgstr "သမိုင်းဖွင့်ရန် (တစ်ချက်နှိပ်)၊ အားလုံးရှင်းရန် (နှစ်ချက်နှိပ်)"
+msgstr "ကလစ်မှတ်တမ်းဖွင့်ရန် (တစ်ချက်) အားလုံးရှင်းရန် (နှစ်ချက်)"
 
 #: clip.py:358
 msgid "Paste"
-msgstr "ကူးထည့်ပါ"
+msgstr "ကူးထည့်ရန်"
 
 #: clip.py:370
 msgid "Pasted"
-msgstr "ကူးထည့်ပြီး"
+msgstr "ကူးထည့်ပြီးပါပြီ"
 
 #: clip.py:445
 msgid "Pin"
-msgstr "ပင်ထိုးရန်"
+msgstr "Pin လုပ်ရန်"
 
 #: clip.py:404
 msgid "Pinned"
-msgstr "ပင်ထိုးပြီး"
+msgstr "Pin လုပ်ပြီးပါပြီ"
 
 #: clip.py:259
 msgid "Text"
@@ -114,8 +118,8 @@ msgstr "စာသားအကြောင်းအရာ:"
 
 #: clip.py:445
 msgid "Unpin"
-msgstr "ပင်ဖြုတ်ရန်"
+msgstr "Pin ဖြုတ်ရန်"
 
 #: clip.py:404
 msgid "Unpinned"
-msgstr "ပင်ဖြုတ်ပြီး"
+msgstr "Pin ဖြုတ်ပြီးပါပြီ"

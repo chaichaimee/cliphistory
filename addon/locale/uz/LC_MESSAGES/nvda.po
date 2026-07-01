@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: ClipHistory 2026.5.1\n"
+"Project-Id-Version: ClipHistory 2026.7.0\n"
 "Report-Msgid-Bugs-To: chaicm75@gmail.com\n"
-"POT-Creation-Date: 2026-05-08 10:54+0700\n"
-"PO-Revision-Date: 2026-05-08 10:54+0700\n"
+"POT-Creation-Date: 2026-07-01 08:19+0700\n"
+"PO-Revision-Date: 2026-07-01 08:40+0700\n"
 "Last-Translator: chaiBot and Malee Yamazaki\n"
 "Language-Team: Uzbek\n"
 "Language: uz\n"
@@ -32,13 +32,13 @@ msgstr "&Joylashtirish"
 msgid "Clear All"
 msgstr "Hammasini tozalash"
 
-#: __init__.py:200
-msgid "Cleared all"
-msgstr "Hammasi tozalandi"
-
 #: clip.py:433
 msgid "Cleared all non-pinned items"
-msgstr "Barcha mahkamlanmaganlar tozalandi"
+msgstr "Barcha pin qilinmagan elementlar tozalandi"
+
+#: __init__.py:205
+msgid "Cleared {count} items"
+msgstr "{count} element tozalandi"
 
 #: clip.py:243
 msgid "Clip History"
@@ -70,23 +70,27 @@ msgstr "Element tahrirlandi"
 
 #: clip.py:449
 msgid "Move Down"
-msgstr "Pastga surish"
+msgstr "Pastga ko'chirish"
 
 #: clip.py:448
 msgid "Move Up"
-msgstr "Yuqoriga surish"
+msgstr "Yuqoriga ko'chirish"
 
 #: clip.py:428
 msgid "Moved down"
-msgstr "Pastga surildi"
+msgstr "Pastga ko'chirildi"
 
 #: clip.py:416
 msgid "Moved up"
-msgstr "Yuqoriga surildi"
+msgstr "Yuqoriga ko'chirildi"
 
-#: __init__.py:209
+#: __init__.py:203
+msgid "No items to clear"
+msgstr "Tozalash uchun elementlar yo'q"
+
+#: __init__.py:214
 msgid "Opens clip history (single) clears all (double)"
-msgstr "Tarixni ochish (bir marta), tozalash (ikki marta)"
+msgstr "Klip tarixini ochish (bir marta) hammasini tozalash (ikki marta)"
 
 #: clip.py:358
 msgid "Paste"
@@ -98,11 +102,11 @@ msgstr "Joylashtirildi"
 
 #: clip.py:445
 msgid "Pin"
-msgstr "Mahkamlash"
+msgstr "Pin qilish"
 
 #: clip.py:404
 msgid "Pinned"
-msgstr "Mahkamlandi"
+msgstr "Pin qilindi"
 
 #: clip.py:259
 msgid "Text"
@@ -110,12 +114,12 @@ msgstr "Matn"
 
 #: clip.py:205
 msgid "Text content:"
-msgstr "Matn tarkibi:"
+msgstr "Matn mazmuni:"
 
 #: clip.py:445
 msgid "Unpin"
-msgstr "Bo'shatish"
+msgstr "Pinni olib tashlash"
 
 #: clip.py:404
 msgid "Unpinned"
-msgstr "Bo'shatildi"
+msgstr "Pin olib tashlandi"
